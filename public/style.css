@@ -11,7 +11,7 @@ body .container {
     font-weight: lighter;
     padding: 30px 30px 30px 10px;
     color: #484A4A;
-    font-size: 20px; }
+    font-size: 17px; }
   body .container a:hover {
     color: #7A8C91; }
 body .outerContainer .innerContainer {
@@ -50,6 +50,28 @@ body .outerContainer .innerContainer {
     body .outerContainer .innerContainer .welcomeText #downArrow:hover {
       color: white;
       opacity: 0.5; }
+body .flexHalfDownArrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+body #halfDownArrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-self: flex-end;
+  width: 120px;
+  height: 120px;
+  color: white;
+  font-size: 100px;
+  border-radius: 100px 100px 0px 0px;
+  border-top: solid white;
+  border-left: solid white;
+  border-right: solid white;
+  border-bottom: none;
+  background-color: transparent; }
+body #halfDownArrow:hover {
+  color: white;
+  opacity: 0.5; }
 body .aboutPage {
   background-image: url("./images/dimensional.jpg");
   background-size: cover;
@@ -57,15 +79,15 @@ body .aboutPage {
   background-attachment: fixed;
   min-width: 600px;
   background-repeat: no-repeat;
-  padding-top: 10px;
+  padding-top: 30px;
   margin: -10px;
-  padding-bottom: 900px; }
+  padding-bottom: 10px; }
   body .aboutPage .aboutPopOut {
     background-color: white;
     margin-top: 200px;
+    margin-bottom: 170px;
     display: inline-block;
     width: 500px;
-    float: left;
     padding: 60px;
     line-height: 30px; }
     body .aboutPage .aboutPopOut #aboutHeading {
@@ -85,15 +107,12 @@ body .skillsPage {
   background-attachment: fixed;
   min-width: 600px;
   background-repeat: no-repeat;
-  padding-top: 10px;
-  margin: -10px;
-  padding-bottom: 900px; }
+  padding-top: 30px; }
   body .skillsPage .skillsPopOut {
     background-color: white;
     margin-top: 200px;
-    display: inline-block;
-    width: 300px;
-    float: right;
+    margin-bottom: 200px;
+    width: 500px;
     padding: 60px;
     line-height: 30px; }
     body .skillsPage .skillsPopOut #skillsHeading {

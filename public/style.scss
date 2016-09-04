@@ -17,7 +17,7 @@ body {
 				font-weight: lighter;
 				padding: 30px 30px 30px 10px;
 				color: $darkGray;
-				font-size: 20px;
+				font-size: 17px;
 			}
 			a:hover {
 				color: $hoverGray;
@@ -70,6 +70,33 @@ body {
 	}
 }
 
+.flexHalfDownArrow {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+#halfDownArrow {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-self: flex-end;
+	width: 120px;
+	height: 120px;
+	color: white;
+	font-size: 100px;
+	border-radius: 100px 100px 0px 0px;
+	border-top: solid white;
+	border-left: solid white;
+	border-right: solid white;
+	border-bottom: none;
+	background-color: transparent;
+}
+#halfDownArrow:hover {
+	color: white;
+	opacity: 0.5;
+}
+
+
 .aboutPage{
 	background-image: url("./images/dimensional.jpg");
 	background-size: cover;
@@ -77,15 +104,15 @@ body {
 	background-attachment: fixed;
 	min-width: 600px;
 	background-repeat: no-repeat;
-	padding-top: 10px;
+	padding-top: 30px;
 	margin: -10px;
-	padding-bottom: 900px;
+	padding-bottom: 10px;
 	.aboutPopOut{
 		background-color: white;
 		margin-top: 200px;
+		margin-bottom: 170px;
 		display: inline-block;
 		width: 500px;
-		float: left;
 		padding: 60px;
 		line-height: 30px;
 			#aboutHeading{
@@ -103,40 +130,35 @@ body {
 		}
 	}
 
-
-.skillsPage{
-	background-image: url("./images/skills.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	min-width: 600px;
-	background-repeat: no-repeat;
-	padding-top: 10px;
-	margin: -10px;
-	padding-bottom: 900px;
-	.skillsPopOut{
-		background-color: white;
-		margin-top: 200px;
-		display: inline-block;
-		width: 300px;
-		float: right;
-		padding: 60px;
-		line-height: 30px;
-			#skillsHeading{
-				color: $darkGray;
-				font-family: $basicFont;
-				font-size: 40px;
-				font-weight: normal;
-			}
-			#skillsText{
-				font-family: $basicFont;
-				letter-spacing: 3px;
-				font-size: 16px;
-				color: #6A6D6E;
+	.skillsPage{
+		background-image: url("./images/skills.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		min-width: 600px;
+		background-repeat: no-repeat;
+		padding-top: 30px;
+		.skillsPopOut{
+			background-color: white;
+			margin-top: 200px;
+			margin-bottom: 200px;
+			width: 500px;
+			padding: 60px;
+			line-height: 30px;
+				#skillsHeading{
+					color: $darkGray;
+					font-family: $basicFont;
+					font-size: 40px;
+					font-weight: normal;
+				}
+				#skillsText{
+					font-family: $basicFont;
+					letter-spacing: 3px;
+					font-size: 16px;
+					color: #6A6D6E;
+				}
 			}
 		}
-	}
-
 
 	.projectsPage{
 		padding-bottom: 400px;
