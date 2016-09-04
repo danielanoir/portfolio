@@ -107,7 +107,7 @@ body .skillsPage {
       font-size: 16px;
       color: #6A6D6E; }
 body .projectsPage {
-  padding-bottom: 600px; }
+  padding-bottom: 400px; }
   body .projectsPage .projectsPopOut {
     padding-top: 200px;
     text-align: center;
@@ -136,5 +136,70 @@ body .projectsPage {
         background-image: url("./images/projectTwo.jpg"); }
       body .projectsPage .projectsPopOut .projectsContainer .projectThree {
         background-image: url("./images/projectThree.jpg"); }
+body .contactPage {
+  min-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EBEDED;
+  height: 700px; }
+  body .contactPage .contactPopOut {
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    padding: 60px;
+    line-height: 30px; }
+    body .contactPage .contactPopOut #contactHeading {
+      color: #484A4A;
+      margin: auto;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-size: 40px;
+      font-weight: normal; }
+    body .contactPage .contactPopOut #name, body .contactPage .contactPopOut #email {
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 16px;
+      color: #484A4A;
+      display: inline-block;
+      padding: 15px;
+      border: solid #EBEDED;
+      display: inline-block;
+      width: 250px;
+      margin: 30px 5px 5px 5px; }
+    body .contactPage .contactPopOut #message {
+      display: block;
+      margin: 5px 5px 15px 5px;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 16px;
+      color: #484A4A;
+      border: solid #EBEDED;
+      width: 550px;
+      height: 150px;
+      padding: 15px; }
+    body .contactPage .contactPopOut #sendMessageButton {
+      display: block;
+      margin: auto;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 20px;
+      color: white;
+      width: 200px;
+      height: 80px;
+      border: solid #ABD19F;
+      border-radius: 40px;
+      background-color: #ABD19F; }
+body .footer {
+  padding: 15px;
+  background-color: #2F444A; }
+  body .footer #linkedIn, body .footer #gitHub {
+    font-family: "Oxygen", "Source Sans Pro", sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #7A8C91;
+    display: inline-block;
+    padding: 10px; }
+  body .footer #gitHub:hover, body .footer #linkedIn:hover {
+    color: orange; }
 
 /*# sourceMappingURL=style.css.map */

@@ -139,7 +139,7 @@ body {
 
 
 	.projectsPage{
-		padding-bottom: 600px;
+		padding-bottom: 400px;
 		.projectsPopOut{
 			padding-top: 200px;
 			text-align: center;
@@ -178,5 +178,80 @@ body {
 			}
 		}
 
+		.contactPage{
+			min-width: 700px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #EBEDED;
+			height: 700px;
+			.contactPopOut{
+				background-color: white;
+				width: 600px;
+				height: 400px;
+				padding: 60px;
+				line-height: 30px;
+					#contactHeading{
+						color: $darkGray;
+						margin: auto;
+						font-family: $basicFont;
+						font-size: 40px;
+						font-weight: normal;
+					}
+					#name, #email {
+						font-family: $basicFont;
+						letter-spacing: 3px;
+						font-size: 16px;
+						color: $darkGray;
+						display: inline-block;
+						padding: 15px;
+						border: solid #EBEDED;
+						display: inline-block;
+						width: 250px;
+						margin: 30px 5px 5px 5px;
+					}
+
+					#message {
+						display: block;
+						margin: 5px 5px 15px 5px;
+						font-family: $basicFont;
+						letter-spacing: 3px;
+						font-size: 16px;
+						color: $darkGray;
+						border: solid #EBEDED;
+						width: 550px;
+						height: 150px;
+						padding: 15px;
+					}
+					#sendMessageButton {
+						display: block;
+						margin: auto;
+						font-family: $basicFont;
+						letter-spacing: 3px;
+						font-size: 20px;
+						color: white;
+						width: 200px;
+						height: 80px;
+						border: solid #ABD19F;
+						border-radius: 40px;
+						background-color: #ABD19F;
+					}
+				}
+			}
+		.footer {
+			padding: 15px;
+			background-color: #2F444A;
+			#linkedIn, #gitHub{
+				font-family: $basicFont;
+				letter-spacing: 3px;
+				font-size: 16px;
+				color: $hoverGray;
+				display: inline-block;
+				padding: 10px;
+			}
+			#gitHub:hover, #linkedIn:hover {
+				color: orange;
+			}
+		}
 
 }
