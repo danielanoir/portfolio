@@ -1,0 +1,182 @@
+$basicFont: 'Oxygen', 'Source Sans Pro', sans-serif;
+
+$darkGray: #484A4A;
+$hoverGray: #7A8C91;
+
+body {
+	.container {
+		position: fixed;
+		background-color: white;
+		width: 100%;
+		padding: 20px;
+		margin-left: -10px;
+		text-align: right;
+			.navLinks {
+				text-decoration: none;
+				font-family: $basicFont;
+				font-weight: lighter;
+				padding: 30px 30px 30px 10px;
+				color: $darkGray;
+				font-size: 20px;
+			}
+			a:hover {
+				color: $hoverGray;
+			}
+		}
+
+.outerContainer{
+	.innerContainer {
+		background-image: url("./images/water.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		min-width: 600px;
+		background-repeat: no-repeat;
+		padding-top: 10px;
+		margin: -10px;
+		padding-bottom: 650px;
+
+		.welcomeText {
+			margin-top: 150px;
+			font-family: $basicFont;
+			letter-spacing: 3px;
+			text-align: center;
+			color: white;
+			h1{
+				font-size: 70px;
+				font-weight: normal;
+				margin-bottom: 0px;
+			}
+			h2{
+				font-size: 30px;
+				margin-top: 0px;
+				margin-bottom: 70px;
+				font-weight: lighter;
+			}
+			#downArrow {
+				width: 120px;
+				height: 120px;
+				color: white;
+				font-size: 100px;
+				border-radius: 100px;
+				border: solid white;
+				background-color: transparent;
+			}
+			#downArrow:hover {
+				color: white;
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+.aboutPage{
+	background-image: url("./images/dimensional.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-width: 600px;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	margin: -10px;
+	padding-bottom: 900px;
+	.aboutPopOut{
+		background-color: white;
+		margin-top: 200px;
+		display: inline-block;
+		width: 500px;
+		float: left;
+		padding: 60px;
+		line-height: 30px;
+			#aboutHeading{
+				color: $darkGray;
+				font-family: $basicFont;
+				font-size: 40px;
+				font-weight: normal;
+			}
+			#aboutText{
+				font-family: $basicFont;
+				letter-spacing: 3px;
+				font-size: 16px;
+				color: #6A6D6E;
+			}
+		}
+	}
+
+
+.skillsPage{
+	background-image: url("./images/skills.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-width: 600px;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	margin: -10px;
+	padding-bottom: 900px;
+	.skillsPopOut{
+		background-color: white;
+		margin-top: 200px;
+		display: inline-block;
+		width: 300px;
+		float: right;
+		padding: 60px;
+		line-height: 30px;
+			#skillsHeading{
+				color: $darkGray;
+				font-family: $basicFont;
+				font-size: 40px;
+				font-weight: normal;
+			}
+			#skillsText{
+				font-family: $basicFont;
+				letter-spacing: 3px;
+				font-size: 16px;
+				color: #6A6D6E;
+			}
+		}
+	}
+
+
+	.projectsPage{
+		padding-bottom: 600px;
+		.projectsPopOut{
+			padding-top: 200px;
+			text-align: center;
+			line-height: 30px;
+			margin: auto;
+				#projectsHeading{
+					color: $darkGray;
+					font-family: $basicFont;
+					font-size: 40px;
+					font-weight: normal;
+				}
+				#projectsText{
+					font-family: $basicFont;
+					letter-spacing: 3px;
+					font-size: 16px;
+					color: #6A6D6E;
+				}
+				.projectsContainer {
+					display: inline-flex;
+					flex-wrap: nowrap;
+					.projectOne, .projectTwo, .projectThree {
+						width: 300px;
+						height: 500px;
+						border: solid $hoverGray .5px;
+					}
+					.projectOne {
+						background-image: url("./images/projectOne.jpg");
+					}
+					.projectTwo {
+						background-image: url("./images/projectTwo.jpg");
+					}
+					.projectThree {
+						background-image: url("./images/projectThree.jpg");
+					}
+				}
+			}
+		}
+
+
+}

@@ -1,0 +1,140 @@
+body .container {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  margin-left: -10px;
+  text-align: right; }
+  body .container .navLinks {
+    text-decoration: none;
+    font-family: "Oxygen", "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    padding: 30px 30px 30px 10px;
+    color: #484A4A;
+    font-size: 20px; }
+  body .container a:hover {
+    color: #7A8C91; }
+body .outerContainer .innerContainer {
+  background-image: url("./images/water.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 600px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  margin: -10px;
+  padding-bottom: 650px; }
+  body .outerContainer .innerContainer .welcomeText {
+    margin-top: 150px;
+    font-family: "Oxygen", "Source Sans Pro", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white; }
+    body .outerContainer .innerContainer .welcomeText h1 {
+      font-size: 70px;
+      font-weight: normal;
+      margin-bottom: 0px; }
+    body .outerContainer .innerContainer .welcomeText h2 {
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 70px;
+      font-weight: lighter; }
+    body .outerContainer .innerContainer .welcomeText #downArrow {
+      width: 120px;
+      height: 120px;
+      color: white;
+      font-size: 100px;
+      border-radius: 100px;
+      border: solid white;
+      background-color: transparent; }
+    body .outerContainer .innerContainer .welcomeText #downArrow:hover {
+      color: white;
+      opacity: 0.5; }
+body .aboutPage {
+  background-image: url("./images/dimensional.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 600px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  margin: -10px;
+  padding-bottom: 900px; }
+  body .aboutPage .aboutPopOut {
+    background-color: white;
+    margin-top: 200px;
+    display: inline-block;
+    width: 500px;
+    float: left;
+    padding: 60px;
+    line-height: 30px; }
+    body .aboutPage .aboutPopOut #aboutHeading {
+      color: #484A4A;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-size: 40px;
+      font-weight: normal; }
+    body .aboutPage .aboutPopOut #aboutText {
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 16px;
+      color: #6A6D6E; }
+body .skillsPage {
+  background-image: url("./images/skills.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 600px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  margin: -10px;
+  padding-bottom: 900px; }
+  body .skillsPage .skillsPopOut {
+    background-color: white;
+    margin-top: 200px;
+    display: inline-block;
+    width: 300px;
+    float: right;
+    padding: 60px;
+    line-height: 30px; }
+    body .skillsPage .skillsPopOut #skillsHeading {
+      color: #484A4A;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-size: 40px;
+      font-weight: normal; }
+    body .skillsPage .skillsPopOut #skillsText {
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 16px;
+      color: #6A6D6E; }
+body .projectsPage {
+  padding-bottom: 600px; }
+  body .projectsPage .projectsPopOut {
+    padding-top: 200px;
+    text-align: center;
+    line-height: 30px;
+    margin: auto; }
+    body .projectsPage .projectsPopOut #projectsHeading {
+      color: #484A4A;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-size: 40px;
+      font-weight: normal; }
+    body .projectsPage .projectsPopOut #projectsText {
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      font-size: 16px;
+      color: #6A6D6E; }
+    body .projectsPage .projectsPopOut .projectsContainer {
+      display: inline-flex;
+      flex-wrap: nowrap; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
+        width: 300px;
+        height: 500px;
+        border: solid #7A8C91 0.5px; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne {
+        background-image: url("./images/projectOne.jpg"); }
+      body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
+        background-image: url("./images/projectTwo.jpg"); }
+      body .projectsPage .projectsPopOut .projectsContainer .projectThree {
+        background-image: url("./images/projectThree.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
