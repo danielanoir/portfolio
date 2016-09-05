@@ -225,8 +225,8 @@ body .footer {
   margin-left: -10px;
   margin-bottom: -10px; }
   body .footer #linkedIn, body .footer #gitHub {
-    padding: 10px;
-    opacity: .2; }
+    margin: auto;
+    opacity: 0.5; }
   body .footer #gitHub:hover, body .footer #linkedIn:hover {
     opacity: 1; }
 

@@ -3,51 +3,57 @@
 
   <head>
     <title>Daniela Noir</title>
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="public/images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="public/style.css">
   </head>
 
     <body>
       <div class="fixed">
       <nav class="container">
-        <a class="navLinks" href="#">Welcome</a>
-        <a class="navLinks" href="#">About</a>
-        <a class="navLinks" href="#">Skills</a>
-        <a class="navLinks" href="#">Projects</a>
-        <a class="navLinks" href="#">Contact</a>
+        <a class="navLinks" href="#welcome">Welcome</a>
+        <a class="navLinks" href="#about">About</a>
+        <a class="navLinks" href="#skills">Skills</a>
+        <a class="navLinks" href="#projects">Projects</a>
+        <a class="navLinks" href="#contact">Contact</a>
       </nav>
     </div>
 
+    <a name="welcome"></a>
     <div class="outerContainer">
       <div class="innerContainer">
         <div class="welcomeText">
           <h1>Daniela Noir</h1>
           <h2>Full-stack web developer</h2>
-          <button id="downArrow"> &darr; </button>
+          <div class="roundArrow">
+          <a href="#about" id="downArrow"> &darr; </a>
+        </div>
         </div>
       </div>
     </div>
 
+    <a name="about"></a>
     <div class="aboutPage">
       <div class="aboutPopOut">
         <h1 id="aboutHeading">About</h1>
         <p id="aboutText"> Enthusiastic Full-Stack Web Developer dedicated to creating engaging websites and learning new coding languages to constantly adapt to industry changes.</p>
       </div>
       <div class="flexHalfDownArrow">
-      <button id="halfDownArrow"> &darr; </button>
+      <a href="#skills" id="halfDownArrow"> &darr; </a>
       </div>
     </div>
 
+  <a name="skills"></a>
     <div class="skillsPage">
       <div class="skillsPopOut">
         <h1 id="skillsHeading">Skills</h1>
         <p id="skillsText">JavaScript, JQuery, CSS, SASS, Ruby on Rails, HTML, AngularJS</p>
       </div>
       <div class="flexHalfDownArrow">
-      <button id="halfDownArrow"> &darr; </button>
+      <a href="#projects" id="halfDownArrow"> &darr; </a>
       </div>
     </div>
 
+  <a name="projects"></a>
     <div class="projectsPage">
       <div class="projectsPopOut">
         <h1 id="projectsHeading">Projects</h1>
@@ -60,7 +66,8 @@
       </div>
     </div>
 
-    <div class="contactPage">
+    <a id="contact" name="contact"></a>
+    <div class="contactPage" class="animation-element">
       <div class="contactPopOut">
         <div id="contactHeading">Contact</div>
         <input value="name" id="name"></input>
@@ -70,11 +77,11 @@
       </div>
     </div>
 
-    <div class="footer">
-      <p id="linkedIn">LinkedIn</p>
-      <p id="gitHub">GitHub</p>
-    </div>
-
-      <script src="main.js"></script>
-     </body>
+  <div class="footer">
+      <a id="linkedIn"  href="https://www.linkedin.com/pub/daniela-noir/5a/4a5/753"><img src="http://image.flaticon.com/icons/png/512/8/8707.png" alt="View Daniela Noir's LinkedIn profile"  width="50" height="50">&nbsp;</span></a>
+      <a href="https://github.com/danielanoir" id="gitHub">    <img src="http://pages.cs.wisc.edu/~matthewb/source_images/github.png" width="50" height="50"></a>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./public/main.js"></script>
+   </body>
 </html>

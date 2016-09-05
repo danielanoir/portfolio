@@ -280,9 +280,10 @@ body {
 			margin-right: -10px;
 			margin-left: -10px;
 			margin-bottom: -10px;
+
 			#linkedIn, #gitHub{
-				padding: 10px;
-				opacity: .2;
+				margin: auto;
+				opacity: 0.5;
 			}
 			#gitHub:hover, #linkedIn:hover {
 				opacity: 1;
