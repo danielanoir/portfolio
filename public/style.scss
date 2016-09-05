@@ -9,7 +9,7 @@ body {
 		background-color: white;
 		width: 100%;
 		padding: 20px;
-		// margin-left: -10px;
+		margin-left: -10px;
 		text-align: right;
 			.navLinks {
 				text-decoration: none;
@@ -53,13 +53,19 @@ body {
 				margin-bottom: 70px;
 				font-weight: lighter;
 			}
-			#downArrow {
+
+			.roundArrow {
+				margin: auto;
 				width: 120px;
 				height: 120px;
-				color: white;
-				font-size: 100px;
-				border-radius: 100px;
 				border: solid white;
+				border-radius: 100px;
+
+			}
+			#downArrow {
+				color: white;
+				text-decoration: none;
+				font-size: 100px;
 				background-color: transparent;
 			}
 			#downArrow:hover {
@@ -76,6 +82,7 @@ body {
 	justify-content: center;
 }
 #halfDownArrow {
+	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -139,6 +146,7 @@ body {
 		background-repeat: no-repeat;
 		padding-top: 30px;
 		margin-right: -10px;
+		margin-left: -10px;
 		.skillsPopOut{
 			background-color: white;
 			margin-left: auto;
@@ -164,7 +172,7 @@ body {
 		}
 
 	.projectsPage{
-		padding-bottom: 400px;
+		padding-bottom: 200px;
 		.projectsPopOut{
 			padding-top: 200px;
 			text-align: center;
@@ -210,6 +218,9 @@ body {
 			align-items: center;
 			background: #EBEDED;
 			height: 700px;
+			margin-right: -10px;
+			margin-left: -10px;
+
 			.contactPopOut{
 				background-color: white;
 				width: 600px;
@@ -266,16 +277,15 @@ body {
 		.footer {
 			padding: 15px;
 			background-color: #2F444A;
+			margin-right: -10px;
+			margin-left: -10px;
+			margin-bottom: -10px;
 			#linkedIn, #gitHub{
-				font-family: $basicFont;
-				letter-spacing: 3px;
-				font-size: 16px;
-				color: $hoverGray;
-				display: inline-block;
 				padding: 10px;
+				opacity: .2;
 			}
 			#gitHub:hover, #linkedIn:hover {
-				color: orange;
+				opacity: 1;
 			}
 		}
 
