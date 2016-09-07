@@ -10,15 +10,14 @@
     <body>
       <div class="fixed">
       <nav class="container">
-        <a class="navLinks" href="#welcome">Welcome</a>
-        <a class="navLinks" href="#about">About</a>
-        <a class="navLinks" href="#skills">Skills</a>
-        <a class="navLinks" href="#projects">Projects</a>
-        <a class="navLinks" href="#contact">Contact</a>
+        <a class="navLinks" id="welcome">Welcome</a>
+        <a class="navLinks" id="about">About</a>
+        <a class="navLinks" id="skills">Skills</a>
+        <a class="navLinks" id="projects">Projects</a>
+        <a class="navLinks" id="contact">Contact</a>
       </nav>
     </div>
 
-    <a name="welcome"></a>
     <div class="outerContainer">
       <div class="innerContainer">
         <div class="welcomeText">
@@ -31,29 +30,27 @@
       </div>
     </div>
 
-    <a name="about"></a>
     <div class="aboutPage">
       <div class="aboutPopOut">
         <h1 id="aboutHeading">About</h1>
         <p id="aboutText"> Enthusiastic Full-Stack Web Developer dedicated to creating engaging websites and learning new coding languages to constantly adapt to industry changes.</p>
       </div>
       <div class="flexHalfDownArrow">
-      <a href="#skills" id="halfDownArrow"> &darr; </a>
+      <a href="#skills" class="aboutPageArrow" id="halfDownArrow"> &darr; </a>
       </div>
     </div>
 
-  <a name="skills"></a>
     <div class="skillsPage">
       <div class="skillsPopOut">
         <h1 id="skillsHeading">Skills</h1>
         <p id="skillsText">JavaScript, JQuery, CSS, SASS, Ruby on Rails, HTML, AngularJS</p>
       </div>
       <div class="flexHalfDownArrow">
-      <a href="#projects" id="halfDownArrow"> &darr; </a>
+      <a href="#projects" class="skillsPageArrow" id="halfDownArrow"> &darr; </a>
       </div>
     </div>
 
-  <a name="projects"></a>
+  <!-- <a name="projects"></a> -->
     <div class="projectsPage">
       <div class="projectsPopOut">
         <h1 id="projectsHeading">Projects</h1>
@@ -66,7 +63,6 @@
       </div>
     </div>
 
-    <a id="contact" name="contact"></a>
     <div class="contactPage" class="animation-element">
       <div class="contactPopOut">
         <div id="contactHeading">Contact</div>
@@ -82,6 +78,6 @@
       <a href="https://github.com/danielanoir" id="gitHub">    <img src="http://pages.cs.wisc.edu/~matthewb/source_images/github.png" width="50" height="50"></a>
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./public/main.js"></script>
+    <script src="public/main.js"></script>
    </body>
 </html>

@@ -3,6 +3,14 @@ $basicFont: 'Oxygen', 'Source Sans Pro', sans-serif;
 $darkGray: #484A4A;
 $hoverGray: #7A8C91;
 
+@keyframes fadein{
+   from{opacity:0;}
+   to{opacity:1;}
+}
+.welcomeText{
+   animation: fadein 2s;
+}
+
 body {
 	.container {
 		position: fixed;
