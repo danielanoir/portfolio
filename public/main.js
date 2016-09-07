@@ -1,27 +1,22 @@
 
 $(document).ready(function(){
 
-  if(window.addEventListener){
-      window.addEventListener('scroll',scroll)
-  }else if(window.attachEvent){
-      window.attachEvent('onscroll',scroll);
+  var hideWelcome = function() {
+    $(".welcomeText").hide();
   }
-  function scroll(ev){
-      var st = Math.max(document.documentElement.scrollTop,document.body.scrollTop);
-      if(!st){
-              $(".contactPopOut").hide(); {
-                console.log("scrolled top")
-              }
-              $(".welcomeText").fadeIn("slow", function() {
-              })
-      }else if((st+document.documentElement.clientHeight)>=document.documentElement.scrollHeight ){
+  var hideSkills = function() {
+    $(".skillsPopOut").hide();
+  }
+  $(function(){
+    $(document).scroll(function() {
+      hideWelcome();
+      if($(document).scrollTop() == 0)
+      $(".welcomeText").fadeIn("slow", function() {
+      })
+    })
+  })
 
-            $(".contactPopOut").fadeIn("slow", function() {
-              console.log('bottom')
-            $(".welcomeText").hide();
-            });
-      }
-  }
+
 
   $("#welcome").click(function() {
     var offset = $(this).offset();
@@ -29,27 +24,27 @@ $(document).ready(function(){
   });
   $(".roundArrow").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 1050}, 400);
+    $('html, body').animate({scrollTop: 600}, 400);
   });
   $("#about").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 1050}, 400);
+    $('html, body').animate({scrollTop: 600}, 400);
   });
   $(".aboutPageArrow").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 2000}, 400);
+    $('html, body').animate({scrollTop: 1500}, 400);
   });
   $("#skills").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 2000}, 400);
+    $('html, body').animate({scrollTop: 1500}, 400);
   });
   $(".skillsPageArrow").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 2900}, 400);
+    $('html, body').animate({scrollTop: 2400}, 400);
   });
   $("#projects").click(function() {
     var offset = $(this).offset();
-    $('html, body').animate({scrollTop: 2900}, 400);
+    $('html, body').animate({scrollTop: 2400}, 400);
   });
   $("#contact").click(function() {
     var offset = $(this).offset();

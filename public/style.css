@@ -118,6 +118,7 @@ body .skillsPage {
   background-position: center;
   background-attachment: fixed;
   min-width: 600px;
+  min-height: 700px;
   background-repeat: no-repeat;
   padding-top: 30px;
   margin-right: -10px;
@@ -181,7 +182,6 @@ body .contactPage {
   margin-right: -10px;
   margin-left: -10px; }
   body .contactPage .contactPopOut {
-    display: none;
     background-color: white;
     width: 600px;
     height: 400px;
