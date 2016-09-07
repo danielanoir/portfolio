@@ -181,6 +181,7 @@ body .contactPage {
   margin-right: -10px;
   margin-left: -10px; }
   body .contactPage .contactPopOut {
+    display: none;
     background-color: white;
     width: 600px;
     height: 400px;

@@ -1,5 +1,27 @@
+
 $(document).ready(function(){
 
+  if(window.addEventListener){
+      window.addEventListener('scroll',scroll)
+  }else if(window.attachEvent){
+      window.attachEvent('onscroll',scroll);
+  }
+  function scroll(ev){
+      var st = Math.max(document.documentElement.scrollTop,document.body.scrollTop);
+      if(!st){
+              $(".contactPopOut").hide(); {
+                console.log("scrolled top")
+              }
+              $(".welcomeText").fadeIn("slow", function() {
+              })
+      }else if((st+document.documentElement.clientHeight)>=document.documentElement.scrollHeight ){
+
+            $(".contactPopOut").fadeIn("slow", function() {
+              console.log('bottom')
+            $(".welcomeText").hide();
+            });
+      }
+  }
 
   $("#welcome").click(function() {
     var offset = $(this).offset();
