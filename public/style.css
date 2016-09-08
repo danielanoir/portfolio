@@ -28,10 +28,10 @@ body .outerContainer .innerContainer {
   background-position: center;
   background-attachment: fixed;
   min-width: 600px;
+  height: 1000px;
   background-repeat: no-repeat;
   padding-top: 10px;
-  margin: -10px;
-  padding-bottom: 650px; }
+  margin: -10px; }
   body .outerContainer .innerContainer .welcomeText {
     margin-top: 150px;
     font-family: "Oxygen", "Source Sans Pro", sans-serif;
@@ -62,17 +62,10 @@ body .outerContainer .innerContainer {
       color: white;
       opacity: 0.5; }
 body .flexHalfDownArrow {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center; }
+  bottom: 0px; }
 body #halfDownArrow {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-self: flex-end;
-  width: 120px;
-  height: 120px;
+  text-align: center;
   color: white;
   font-size: 100px;
   border-radius: 100px 100px 0px 0px;
@@ -90,16 +83,14 @@ body .aboutPage {
   background-position: center;
   background-attachment: fixed;
   min-width: 600px;
+  height: 900px;
   background-repeat: no-repeat;
-  padding-top: 30px;
-  margin: -10px;
-  padding-bottom: 10px; }
+  margin: -10px; }
   body .aboutPage .aboutPopOut {
     background-color: white;
     margin-top: 200px;
-    margin-bottom: 170px;
-    display: inline-block;
     width: 500px;
+    display: inline-block;
     padding: 60px;
     line-height: 30px; }
     body .aboutPage .aboutPopOut #aboutHeading {
@@ -118,7 +109,7 @@ body .skillsPage {
   background-position: center;
   background-attachment: fixed;
   min-width: 600px;
-  min-height: 700px;
+  height: 900px;
   background-repeat: no-repeat;
   padding-top: 30px;
   margin-right: -10px;
@@ -128,7 +119,6 @@ body .skillsPage {
     margin-left: auto;
     margin-right: 0px;
     margin-top: 250px;
-    margin-bottom: 250px;
     width: 500px;
     padding: 60px;
     line-height: 30px; }
