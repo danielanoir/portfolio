@@ -48,35 +48,54 @@ body .outerContainer .innerContainer {
       margin-bottom: 70px;
       font-weight: lighter; }
     body .outerContainer .innerContainer .welcomeText .roundArrow {
-      margin: auto;
-      width: 120px;
-      height: 120px;
-      border: solid white;
-      border-radius: 100px; }
+      margin: auto; }
     body .outerContainer .innerContainer .welcomeText #downArrow {
-      color: white;
+      border: solid white;
+      border-radius: 1000px;
       text-decoration: none;
       font-size: 100px;
+      padding-left: 5px;
+      padding-right: 5px;
       background-color: transparent; }
     body .outerContainer .innerContainer .welcomeText #downArrow:hover {
       color: white;
       opacity: 0.5; }
-body .flexHalfDownArrow {
-  bottom: 0px; }
+body .aboutArrowDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 0px; }
+body .skillsArrowDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 255px;
+  margin-bottom: 0px; }
 body #halfDownArrow {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 100px;
-  border-radius: 100px 100px 0px 0px;
+  border-radius: 1000px 1000px 0px 0px;
+  background-color: transparent;
   border-top: solid white;
   border-left: solid white;
   border-right: solid white;
   border-bottom: none;
-  background-color: transparent; }
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 100px; }
 body #halfDownArrow:hover {
   color: white;
   opacity: 0.5; }
+body .projectsArrowDiv {
+  display: flex;
+  justify-content: center; }
+body #upsideHalfDownArrow {
+  border-radius: 0px 0px 1000px 1000px;
+  background-color: #B05D67;
+  border-bottom: solid #82464D 5px;
+  border-left: solid #82464D 5px;
+  border-right: solid #82464D px;
+  border-top: none;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 100px; }
 body .aboutPage {
   background-image: url("./images/dimensional.jpg");
   background-size: cover;
@@ -85,11 +104,15 @@ body .aboutPage {
   min-width: 600px;
   height: 900px;
   background-repeat: no-repeat;
-  margin: -10px; }
+  padding-top: 30px;
+  margin-top: -120px;
+  margin-right: -10px;
+  margin-left: -10px; }
   body .aboutPage .aboutPopOut {
     background-color: white;
     margin-top: 200px;
     width: 500px;
+    max-width: 500px;
     display: inline-block;
     padding: 60px;
     line-height: 30px; }
@@ -112,6 +135,7 @@ body .skillsPage {
   height: 900px;
   background-repeat: no-repeat;
   padding-top: 30px;
+  margin-top: -120px;
   margin-right: -10px;
   margin-left: -10px; }
   body .skillsPage .skillsPopOut {
@@ -157,11 +181,21 @@ body .projectsPage {
         height: 500px;
         border: solid #7A8C91 0.5px; }
       body .projectsPage .projectsPopOut .projectsContainer .projectOne {
-        background-image: url("./images/projectOne.jpg"); }
+        background-image: url("./images/projectOne.jpg");
+        background-size: cover;
+        background-position: center; }
+        body .projectsPage .projectsPopOut .projectsContainer .projectOne .monty {
+          color: #484A4A;
+          font-size: 50px;
+          text-decoration: none; }
       body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
-        background-image: url("./images/projectTwo.jpg"); }
+        background-image: url("./images/projectTwo.jpg");
+        background-size: cover;
+        background-position: center; }
       body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-        background-image: url("./images/projectThree.jpg"); }
+        background-image: url("./images/projectThree.jpg");
+        background-size: cover;
+        background-position: center; }
 body .contactPage {
   min-width: 700px;
   display: flex;

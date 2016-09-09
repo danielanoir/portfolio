@@ -43,7 +43,6 @@ body {
 		background-repeat: no-repeat;
 		padding-top: 10px;
 		margin: -10px;
-		// padding-bottom: 650px;
 
 		.welcomeText {
 			margin-top: 150px;
@@ -65,16 +64,14 @@ body {
 
 			.roundArrow {
 				margin: auto;
-				width: 120px;
-				height: 120px;
-				border: solid white;
-				border-radius: 100px;
-
 			}
 			#downArrow {
-				color: white;
+        border: solid white;
+        border-radius: 1000px;
 				text-decoration: none;
 				font-size: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
 				background-color: transparent;
 			}
 			#downArrow:hover {
@@ -85,27 +82,48 @@ body {
 	}
 }
 
-.flexHalfDownArrow {
-  // position: absolute;
-  bottom: 0px;
+.aboutArrowDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 0px;
+}
+.skillsArrowDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 255px;
+  margin-bottom: 0px;
 }
 #halfDownArrow {
-	text-decoration: none;
-  text-align: center;
-	// width: 120px;
-	// height: 120px;
-	color: white;
-	font-size: 100px;
-	border-radius: 100px 100px 0px 0px;
-	border-top: solid white;
+	border-radius: 1000px 1000px 0px 0px;
+  background-color: transparent;
+  border-top: solid white;
 	border-left: solid white;
 	border-right: solid white;
 	border-bottom: none;
-	background-color: transparent;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 100px;
 }
 #halfDownArrow:hover {
 	color: white;
 	opacity: 0.5;
+}
+.projectsArrowDiv {
+  display: flex;
+  justify-content: center;
+  // margin-top: -10px;
+}
+#upsideHalfDownArrow {
+  border-radius: 0px 0px 1000px 1000px;
+  background-color: #B05D67;
+  border-bottom: solid #82464D 5px;
+  border-left: solid #82464D 5px;
+  border-right: solid #82464D px;
+  border-top: none;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 100px;
 }
 
 
@@ -117,11 +135,16 @@ body {
 	min-width: 600px;
   height: 900px;
 	background-repeat: no-repeat;
-	margin: -10px;
+  padding-top: 30px;
+  margin-top: -120px;
+  margin-right: -10px;
+  margin-left: -10px;
+
 	.aboutPopOut{
 		background-color: white;
 		margin-top: 200px;
     width: 500px;
+    max-width: 500px;
 		display: inline-block;
 		padding: 60px;
 		line-height: 30px;
@@ -149,6 +172,7 @@ body {
     height: 900px;
 		background-repeat: no-repeat;
 		padding-top: 30px;
+    margin-top: -120px;
 		margin-right: -10px;
 		margin-left: -10px;
 		.skillsPopOut{
@@ -204,13 +228,24 @@ body {
 					}
 					.projectOne {
 						background-image: url("./images/projectOne.jpg");
+            background-size: cover;
+            background-position: center;
+            .monty {
+              color: $darkGray;
+              font-size: 50px;
+              text-decoration: none;
+            }
 					}
 					.projectTwo {
 						background-image: url("./images/projectTwo.jpg");
-					}
+            background-size: cover;
+            background-position: center;
+          }
 					.projectThree {
 						background-image: url("./images/projectThree.jpg");
-					}
+            background-size: cover;
+            background-position: center;
+        	}
 				}
 			}
 		}
