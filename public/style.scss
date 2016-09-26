@@ -115,12 +115,14 @@ body {
   // margin-top: -10px;
 }
 #upsideHalfDownArrow {
-  border-radius: 0px 0px 1000px 1000px;
-  background-color: #B05D67;
-  border-bottom: solid #82464D 5px;
-  border-left: solid #82464D 5px;
-  border-right: solid #82464D px;
-  border-top: none;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border-radius: 1000px 1000px 0px 0px;
+  background-color: transparent;
+  border-top: solid black;
+	border-left: solid black;
+	border-right: solid black;
+	border-bottom: none;
   padding-left: 70px;
   padding-right: 70px;
   font-size: 100px;
@@ -200,9 +202,10 @@ body {
 		}
 
 	.projectsPage{
-		padding-bottom: 200px;
+		// padding-bottom: 200px;
 		.projectsPopOut{
 			padding-top: 200px;
+      padding-bottom: 200px;
 			text-align: center;
 			line-height: 30px;
 			margin: auto;
@@ -250,69 +253,69 @@ body {
 			}
 		}
 
-		.contactPage{
-			min-width: 700px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background: #EBEDED;
-			height: 700px;
-			margin-right: -10px;
-			margin-left: -10px;
-
-			.contactPopOut{
-				background-color: white;
-				width: 600px;
-				height: 400px;
-				padding: 60px;
-				line-height: 30px;
-					#contactHeading{
-						color: $darkGray;
-						margin: auto;
-						font-family: $basicFont;
-						font-size: 40px;
-						font-weight: normal;
-					}
-					#name, #email {
-						font-family: $basicFont;
-						letter-spacing: 3px;
-						font-size: 16px;
-						color: $darkGray;
-						display: inline-block;
-						padding: 15px;
-						border: solid #EBEDED;
-						display: inline-block;
-						width: 250px;
-						margin: 30px 5px 5px 5px;
-					}
-
-					#message {
-						display: block;
-						margin: 5px 5px 15px 5px;
-						font-family: $basicFont;
-						letter-spacing: 3px;
-						font-size: 16px;
-						color: $darkGray;
-						border: solid #EBEDED;
-						width: 550px;
-						height: 150px;
-						padding: 15px;
-					}
-					#sendMessageButton {
-						display: block;
-						margin: auto;
-						font-family: $basicFont;
-						letter-spacing: 3px;
-						font-size: 20px;
-						color: white;
-						width: 200px;
-						height: 80px;
-						border: solid #ABD19F;
-						border-radius: 40px;
-						background-color: #ABD19F;
-					}
-				}
-			}
+		// .contactPage{
+		// 	min-width: 700px;
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// 	background: #EBEDED;
+		// 	height: 900px;
+		// 	margin-right: -10px;
+		// 	margin-left: -10px;
+    //
+		// 	.contactPopOut{
+		// 		background-color: white;
+		// 		width: 600px;
+		// 		height: 400px;
+		// 		padding: 60px;
+		// 		line-height: 30px;
+		// 			#contactHeading{
+		// 				color: $darkGray;
+		// 				margin: auto;
+		// 				font-family: $basicFont;
+		// 				font-size: 40px;
+		// 				font-weight: normal;
+		// 			}
+		// 			#name, #email {
+		// 				font-family: $basicFont;
+		// 				letter-spacing: 3px;
+		// 				font-size: 16px;
+		// 				color: $darkGray;
+		// 				display: inline-block;
+		// 				padding: 15px;
+		// 				border: solid #EBEDED;
+		// 				display: inline-block;
+		// 				width: 250px;
+		// 				margin: 30px 5px 5px 5px;
+		// 			}
+    //
+		// 			#message {
+		// 				display: block;
+		// 				margin: 5px 5px 15px 5px;
+		// 				font-family: $basicFont;
+		// 				letter-spacing: 3px;
+		// 				font-size: 16px;
+		// 				color: $darkGray;
+		// 				border: solid #EBEDED;
+		// 				width: 550px;
+		// 				height: 150px;
+		// 				padding: 15px;
+		// 			}
+		// 			#sendMessageButton {
+		// 				display: block;
+		// 				margin: auto;
+		// 				font-family: $basicFont;
+		// 				letter-spacing: 3px;
+		// 				font-size: 20px;
+		// 				color: white;
+		// 				width: 200px;
+		// 				height: 80px;
+		// 				border: solid #ABD19F;
+		// 				border-radius: 40px;
+		// 				background-color: #ABD19F;
+		// 			}
+		// 		}
+		// 	}
 		.footer {
 			padding: 15px;
 			background-color: #2F444A;
@@ -320,11 +323,14 @@ body {
 			margin-left: -10px;
 			margin-bottom: -10px;
 
-			#linkedIn, #gitHub{
+			#linkedIn, #email, #gitHub{
 				margin: auto;
 				opacity: 0.5;
 			}
-			#gitHub:hover, #linkedIn:hover {
+      #email{
+        margin: 20px;
+      }
+			#gitHub:hover, #linkedIn:hover, #email:hover {
 				opacity: 1;
 			}
 		}
