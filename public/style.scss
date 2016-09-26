@@ -228,16 +228,16 @@ body {
 						width: 300px;
 						height: 500px;
 						border: solid $hoverGray .5px;
+            .projectTitles {
+              color: $darkGray;
+              font-size: 50px;
+              text-decoration: none;
+            }
 					}
 					.projectOne {
 						background-image: url("./images/projectOne.jpg");
             background-size: cover;
             background-position: center;
-            .monty {
-              color: $darkGray;
-              font-size: 50px;
-              text-decoration: none;
-            }
 					}
 					.projectTwo {
 						background-image: url("./images/projectTwo.jpg");
