@@ -221,6 +221,13 @@ body {
 					font-size: 16px;
 					color: #6A6D6E;
 				}
+
+        .titles {
+          font-size: 50px;
+          color: #52b288;
+          text-decoration: none;
+        }
+
 				.projectsContainer {
 					display: inline-flex;
 					flex-wrap: nowrap;
@@ -228,11 +235,6 @@ body {
 						width: 300px;
 						height: 500px;
 						border: solid $hoverGray .5px;
-            .monty {
-              font-size: 50px;
-              color: $darkGray;
-              text-decoration: underline;
-            }
             .projectTitles {
               color: $darkGray;
               font-size: 50px;
