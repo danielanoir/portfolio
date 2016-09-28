@@ -181,6 +181,10 @@ body .projectsPage .projectsPopOut {
       width: 300px;
       height: 500px;
       border: solid #7A8C91 0.5px; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne .monty, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .monty, body .projectsPage .projectsPopOut .projectsContainer .projectThree .monty {
+        font-size: 50px;
+        color: #484A4A;
+        text-decoration: underline; }
       body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectTitles, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectTitles, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectTitles {
         color: #484A4A;
         font-size: 50px;

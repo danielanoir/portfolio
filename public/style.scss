@@ -228,6 +228,11 @@ body {
 						width: 300px;
 						height: 500px;
 						border: solid $hoverGray .5px;
+            .monty {
+              font-size: 50px;
+              color: $darkGray;
+              text-decoration: underline;
+            }
             .projectTitles {
               color: $darkGray;
               font-size: 50px;
