@@ -54,8 +54,7 @@ body .outerContainer .innerContainer {
       border-radius: 1000px;
       text-decoration: none;
       font-size: 100px;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding: 15px 20px 15px 20px;
       background-color: transparent; }
     body .outerContainer .innerContainer .welcomeText #downArrow:hover {
       color: white;
@@ -63,12 +62,12 @@ body .outerContainer .innerContainer {
 body .aboutArrowDiv {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 150px;
   margin-bottom: 0px; }
 body .skillsArrowDiv {
   display: flex;
   justify-content: center;
-  margin-top: 255px;
+  margin-top: 225px;
   margin-bottom: 0px; }
 body #halfDownArrow {
   border-radius: 1000px 1000px 0px 0px;
@@ -77,8 +76,8 @@ body #halfDownArrow {
   border-left: solid white;
   border-right: solid white;
   border-bottom: none;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 100px; }
 body #halfDownArrow:hover {
   color: white;
@@ -176,11 +175,12 @@ body .projectsPage .projectsPopOut {
     color: #6A6D6E; }
   body .projectsPage .projectsPopOut .titles {
     font-size: 50px;
+    text-shadow: 0 0 4px black;
     color: white;
     text-decoration: none; }
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex;
-    flex-wrap: nowrap; }
+    flex-wrap: nowr ap; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       width: 300px;
       height: 500px;
