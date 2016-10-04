@@ -176,7 +176,7 @@ body .projectsPage .projectsPopOut {
     color: #6A6D6E; }
   body .projectsPage .projectsPopOut .titles {
     font-size: 50px;
-    color: #52b288;
+    color: white;
     text-decoration: none; }
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex;
