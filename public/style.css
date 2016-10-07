@@ -174,33 +174,17 @@ body .projectsPage .projectsPopOut {
     font-size: 16px;
     color: #6A6D6E; }
   body .projectsPage .projectsPopOut .titles {
-    font-size: 50px;
-    text-shadow: 0 0 4px black;
-    color: white;
+    font-size: 25px;
+    color: #484A4A;
     text-decoration: none; }
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex;
-    flex-wrap: nowr ap; }
+    overflow-x: auto;
+    white-space: nowrap; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      width: 300px;
+      width: 400px;
       height: 500px;
       border: solid #7A8C91 0.5px; }
-      body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectTitles, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectTitles, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectTitles {
-        color: #484A4A;
-        font-size: 50px;
-        text-decoration: none; }
-    body .projectsPage .projectsPopOut .projectsContainer .projectOne {
-      background-image: url("./images/projectOne.jpg");
-      background-size: cover;
-      background-position: center; }
-    body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
-      background-image: url("./images/projectTwo.jpg");
-      background-size: cover;
-      background-position: center; }
-    body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      background-image: url("./images/projectThree.jpg");
-      background-size: cover;
-      background-position: center; }
 body .footer {
   padding: 15px;
   background-color: #2F444A;

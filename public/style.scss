@@ -222,107 +222,25 @@ body {
 				}
 
         .titles {
-          font-size: 50px;
-          text-shadow: 0 0 4px black;
-          color: white;
+          font-size: 25px;
+          // text-shadow: 0 0 4px black;
+          color: $darkGray;
           text-decoration: none;
         }
 
 				.projectsContainer {
 					display: inline-flex;
-					flex-wrap: nowr ap;
+          overflow-x: auto;
+          white-space: nowrap;
 					.projectOne, .projectTwo, .projectThree {
-						width: 300px;
+						width: 400px;
 						height: 500px;
 						border: solid $hoverGray .5px;
-            .projectTitles {
-              color: $darkGray;
-              font-size: 50px;
-              text-decoration: none;
-            }
 					}
-					.projectOne {
-						background-image: url("./images/projectOne.jpg");
-            background-size: cover;
-            background-position: center;
-					}
-					.projectTwo {
-						background-image: url("./images/projectTwo.jpg");
-            background-size: cover;
-            background-position: center;
-          }
-					.projectThree {
-						background-image: url("./images/projectThree.jpg");
-            background-size: cover;
-            background-position: center;
-        	}
 				}
 			}
 		}
 
-		// .contactPage{
-		// 	min-width: 700px;
-		// 	display: flex;
-		// 	justify-content: center;
-		// 	align-items: center;
-		// 	background: #EBEDED;
-		// 	height: 900px;
-		// 	margin-right: -10px;
-		// 	margin-left: -10px;
-    //
-		// 	.contactPopOut{
-		// 		background-color: white;
-		// 		width: 600px;
-		// 		height: 400px;
-		// 		padding: 60px;
-		// 		line-height: 30px;
-		// 			#contactHeading{
-		// 				color: $darkGray;
-		// 				margin: auto;
-		// 				font-family: $basicFont;
-		// 				font-size: 40px;
-		// 				font-weight: normal;
-		// 			}
-		// 			#name, #email {
-		// 				font-family: $basicFont;
-		// 				letter-spacing: 3px;
-		// 				font-size: 16px;
-		// 				color: $darkGray;
-		// 				display: inline-block;
-		// 				padding: 15px;
-		// 				border: solid #EBEDED;
-		// 				display: inline-block;
-		// 				width: 250px;
-		// 				margin: 30px 5px 5px 5px;
-		// 			}
-    //
-		// 			#message {
-		// 				display: block;
-		// 				margin: 5px 5px 15px 5px;
-		// 				font-family: $basicFont;
-		// 				letter-spacing: 3px;
-		// 				font-size: 16px;
-		// 				color: $darkGray;
-		// 				border: solid #EBEDED;
-		// 				width: 550px;
-		// 				height: 150px;
-		// 				padding: 15px;
-		// 			}
-		// 			#sendMessageButton {
-		// 				display: block;
-		// 				margin: auto;
-		// 				font-family: $basicFont;
-		// 				letter-spacing: 3px;
-		// 				font-size: 20px;
-		// 				color: white;
-		// 				width: 200px;
-		// 				height: 80px;
-		// 				border: solid #ABD19F;
-		// 				border-radius: 40px;
-		// 				background-color: #ABD19F;
-		// 			}
-		// 		}
-		// 	}
 		.footer {
 			padding: 15px;
 			background-color: #2F444A;

@@ -1,0 +1,29 @@
+.top {
+  background-color: gray;
+  margin: 0px; }
+  .top h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 45px; }
+  .top h2 {
+    padding-bottom: 30px;
+    text-align: center; }
+
+.section {
+  text-align: center;
+  font-size: 30px; }
+
+.education {
+  background-color: yellow; }
+  .education .company {
+    font-size: 20px; }
+  .education .positionTitle {
+    font-size: 20px; }
+  .education .location {
+    font-size: 20px; }
+  .education .timeframe {
+    font-size: 20px; }
+  .education p {
+    font-size: 20px; }
+
+/*# sourceMappingURL=resume.css.map */
