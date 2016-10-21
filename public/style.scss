@@ -229,11 +229,9 @@ body {
         }
 
 				.projectsContainer {
-					display: inline-flex;
-          overflow-x: auto;
-          white-space: nowrap;
+          display: inline-flex;
 					.projectOne, .projectTwo, .projectThree {
-						width: 400px;
+						width: 300px;
 						height: 500px;
 						border: solid $hoverGray .5px;
 					}
