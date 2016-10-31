@@ -183,10 +183,16 @@ body .projectsPage .projectsPopOut {
       background-image: url("./images/projectOne.jpg");
       background-size: cover;
       background-position: center; }
+    body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
+      opacity: 0.8; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
       background-image: url("./images/projectTwo.jpg"); }
+    body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover {
+      opacity: 0.8; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       background-image: url("./images/projectThree.jpg"); }
+    body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
+      opacity: 0.8; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       width: 300px;
       height: 500px;
