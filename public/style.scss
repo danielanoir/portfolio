@@ -286,10 +286,12 @@ body {
 
 		.footer {
       text-align: center;
+      margin-top: 100px;
 			padding-top: 30px;
 			padding-bottom: 40px;
       border-top: solid #e8e8e8 30px;
-      margin: -30px;
+      margin-left: -30px;
+      margin-right: -30px;
 
 			.emailLink, .linkedinLink, .githubLink {
 				margin: auto;
