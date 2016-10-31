@@ -7,6 +7,7 @@
   animation: fadein 2s; }
 
 body .container {
+  z-index: 1;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -180,20 +181,23 @@ body .projectsPage .projectsPopOut {
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne {
-      background-image: url("./images/projectOne.jpg"); }
+      background-image: url("./images/projectOne.jpg");
+      opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
-      opacity: 0.8; }
+      opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
-      background-image: url("./images/projectTwo.jpg"); }
+      background-image: url("./images/projectTwo.jpg");
+      opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover {
-      opacity: 0.8; }
+      opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      background-image: url("./images/projectThree.jpg"); }
+      background-image: url("./images/projectThree.jpg");
+      opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
-      opacity: 0.8; }
+      opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      width: 420px;
-      height: 675px;
+      width: 300px;
+      height: 705px;
       border: solid #7A8C91 1px;
       background-size: contain;
       background-position: top; }
@@ -212,8 +216,9 @@ body .footer {
   margin-right: -30px;
   margin-left: -10px;
   margin-bottom: -10px; }
-  body .footer .emailLink {
-    margin: auto; }
+  body .footer .emailLink, body .footer .linkedinLink, body .footer .githubLink {
+    margin: auto;
+    opacity: 0.9; }
   body .footer .linkedinLink {
     margin: auto;
     padding-left: 100px;
@@ -221,6 +226,6 @@ body .footer {
   body .footer .githubLink {
     margin: auto; }
   body .footer .emailLink:hover, body .footer .linkedinLink:hover, body .footer .githubLink:hover {
-    opacity: .8; }
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

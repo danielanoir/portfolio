@@ -13,6 +13,7 @@ $hoverGray: #7A8C91;
 
 body {
 	.container {
+    z-index: 1;
 		position: fixed;
 		background-color: white;
 		width: 100%;
@@ -232,28 +233,31 @@ body {
           display: inline-flex;
           .projectOne {
             background-image: url("./images/projectOne.jpg");
+            opacity: 0.9;
           }
           .projectOne:hover {
-            opacity: 0.8;
+            opacity: 1;
           }
 
           .projectTwo {
             background-image: url("./images/projectTwo.jpg");
+            opacity: 0.9;
           }
 
           .projectTwo:hover {
-            opacity: 0.8;
+            opacity: 1;
           }
           .projectThree {
             background-image: url("./images/projectThree.jpg");
+            opacity: 0.9;
           }
           .projectThree:hover {
-            opacity: 0.8;
+            opacity: 1;
           }
 
 					.projectOne, .projectTwo, .projectThree {
-						width: 420px;
-						height: 675px;
+						width: 300px;
+						height: 705px;
 						border: solid $hoverGray 1px;
             background-size: contain;
             background-position: top;
@@ -279,8 +283,9 @@ body {
 			margin-left: -10px;
 			margin-bottom: -10px;
 
-			.emailLink{
+			.emailLink, .linkedinLink, .githubLink {
 				margin: auto;
+        opacity: 0.9;
 			}
 			.linkedinLink {
 				margin: auto;
@@ -291,7 +296,7 @@ body {
 				margin: auto;
 			}
 			.emailLink:hover, .linkedinLink:hover, .githubLink:hover {
-				opacity: .8;
+				opacity: 1;
 			}
 		}
 
