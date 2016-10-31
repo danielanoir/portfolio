@@ -197,8 +197,8 @@ body .projectsPage .projectsPopOut {
     body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
       opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      width: 300px;
-      height: 705px;
+      width: 350px;
+      height: 675px;
       border: solid #7A8C91 1px;
       background-size: contain;
       background-position: top; }
