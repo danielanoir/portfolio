@@ -108,7 +108,8 @@ body .aboutPage {
   background-repeat: no-repeat;
   padding-top: 30px;
   margin-top: -120px;
-  margin: -30px; }
+  margin-left: -30px;
+  margin-right: -30px; }
   body .aboutPage .aboutPopOut {
     background-color: white;
     margin-top: 200px;
@@ -137,7 +138,8 @@ body .skillsPage {
   background-repeat: no-repeat;
   padding-top: 30px;
   margin-top: -120px;
-  margin: -30px; }
+  margin-left: -30px;
+  margin-right: -30px; }
   body .skillsPage .skillsPopOut {
     background-color: white;
     margin-left: auto;
