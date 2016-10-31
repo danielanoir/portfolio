@@ -190,11 +190,16 @@ body .projectsPage .projectsPopOut {
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       width: 300px;
       height: 500px;
-      color: #2F444A;
       border: solid #7A8C91 1px;
       background-size: cover;
-      background-position: center;
-      font-family: "Oxygen", "Source Sans Pro", sans-serif; }
+      background-position: center; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne div, body .projectsPage .projectsPopOut .projectsContainer .projectTwo div, body .projectsPage .projectsPopOut .projectsContainer .projectThree div {
+        color: #484A4A;
+        font-family: 'Josefin Slab', serif;
+        font-size: 25px;
+        background-color: white;
+        padding: 10px;
+        margin-top: 392px; }
 body .footer {
   padding: 15px;
   background-color: #2F444A;

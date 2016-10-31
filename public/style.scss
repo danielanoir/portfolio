@@ -244,12 +244,17 @@ body {
 					.projectOne, .projectTwo, .projectThree {
 						width: 300px;
 						height: 500px;
-            color: #2F444A;
 						border: solid $hoverGray 1px;
             background-size: cover;
             background-position: center;
-            font-family: $basicFont;
-            // opacity: 0.5;
+            div {
+              color: $darkGray;
+              font-family: 'Josefin Slab', serif;
+              font-size: 25px;
+              background-color: white;
+              padding: 10px;
+              margin-top: 392px;
+            }
         	}
 				}
 			}
