@@ -230,11 +230,27 @@ body {
 
 				.projectsContainer {
           display: inline-flex;
+          .projectOne {
+            background-image: url("./images/projectOne.jpg");
+            background-size: cover;
+            background-position: center;
+          }
+          .projectTwo {
+            background-image: url("./images/projectTwo.jpg");
+          }
+          .projectThree {
+            background-image: url("./images/projectThree.jpg");
+          }
 					.projectOne, .projectTwo, .projectThree {
 						width: 300px;
 						height: 500px;
-						border: solid $hoverGray .5px;
-					}
+            color: #2F444A;
+						border: solid $hoverGray 1px;
+            background-size: cover;
+            background-position: center;
+            font-family: $basicFont;
+            // opacity: 0.5;
+        	}
 				}
 			}
 		}

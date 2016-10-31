@@ -179,10 +179,22 @@ body .projectsPage .projectsPopOut {
     text-decoration: none; }
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex; }
+    body .projectsPage .projectsPopOut .projectsContainer .projectOne {
+      background-image: url("./images/projectOne.jpg");
+      background-size: cover;
+      background-position: center; }
+    body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
+      background-image: url("./images/projectTwo.jpg"); }
+    body .projectsPage .projectsPopOut .projectsContainer .projectThree {
+      background-image: url("./images/projectThree.jpg"); }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       width: 300px;
       height: 500px;
-      border: solid #7A8C91 0.5px; }
+      color: #2F444A;
+      border: solid #7A8C91 1px;
+      background-size: cover;
+      background-position: center;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif; }
 body .footer {
   padding: 15px;
   background-color: #2F444A;
