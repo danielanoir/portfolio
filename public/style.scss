@@ -234,6 +234,7 @@ body {
           display: inline-flex;
           .projectOne {
             background-image: url("./images/projectOne.jpg");
+            background-repeat: none;
             opacity: 0.9;
           }
           .projectOne:hover {
@@ -242,6 +243,7 @@ body {
 
           .projectTwo {
             background-image: url("./images/projectTwo.jpg");
+            background-repeat: none;
             opacity: 0.9;
           }
 
@@ -250,6 +252,7 @@ body {
           }
           .projectThree {
             background-image: url("./images/projectThree.jpg");
+            background-repeat: none;
             opacity: 0.9;
           }
           .projectThree:hover {
@@ -257,8 +260,8 @@ body {
           }
 
 					.projectOne, .projectTwo, .projectThree {
-						width: 350px;
-						height: 675px;
+						width: 380px;
+						height: 600px;
 						border: solid $hoverGray 1px;
             background-size: contain;
             background-position: top;
@@ -267,8 +270,14 @@ body {
               font-family: 'Josefin Slab', serif;
               font-size: 25px;
               background-color: white;
-              padding: 10px;
               margin-top: 392px;
+              padding-top: 10px;
+              background-color: white;
+              height: 300px;
+              width: 380px;
+              border-right: solid $hoverGray 1px;
+              border-left: solid $hoverGray 1px;
+              border-bottom: solid $hoverGray 1px;
             }
         	}
 				}

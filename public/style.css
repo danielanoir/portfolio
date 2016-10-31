@@ -183,22 +183,25 @@ body .projectsPage .projectsPopOut {
     display: inline-flex; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne {
       background-image: url("./images/projectOne.jpg");
+      background-repeat: none;
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
       opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
       background-image: url("./images/projectTwo.jpg");
+      background-repeat: none;
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover {
       opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       background-image: url("./images/projectThree.jpg");
+      background-repeat: none;
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
       opacity: 1; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      width: 350px;
-      height: 675px;
+      width: 380px;
+      height: 600px;
       border: solid #7A8C91 1px;
       background-size: contain;
       background-position: top; }
@@ -207,8 +210,14 @@ body .projectsPage .projectsPopOut {
         font-family: 'Josefin Slab', serif;
         font-size: 25px;
         background-color: white;
-        padding: 10px;
-        margin-top: 392px; }
+        margin-top: 392px;
+        padding-top: 10px;
+        background-color: white;
+        height: 300px;
+        width: 380px;
+        border-right: solid #7A8C91 1px;
+        border-left: solid #7A8C91 1px;
+        border-bottom: solid #7A8C91 1px; }
 body .footer {
   text-align: center;
   padding-top: 30px;
