@@ -201,14 +201,18 @@ body .projectsPage .projectsPopOut {
         padding: 10px;
         margin-top: 392px; }
 body .footer {
-  padding: 15px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
   background-color: #2F444A;
   margin-right: -10px;
   margin-left: -10px;
   margin-bottom: -10px; }
   body .footer #linkedIn, body .footer #email, body .footer #gitHub {
     margin: auto;
-    opacity: 0.5; }
+    opacity: 0.5;
+    padding-left: 20px;
+    padding-right: 20px; }
   body .footer #email {
     margin: 20px; }
   body .footer #gitHub:hover, body .footer #linkedIn:hover, body .footer #email:hover {

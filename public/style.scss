@@ -261,7 +261,9 @@ body {
 		}
 
 		.footer {
-			padding: 15px;
+      text-align: center;
+			padding-top: 30px;
+			padding-bottom: 40px;
 			background-color: #2F444A;
 			margin-right: -10px;
 			margin-left: -10px;
@@ -270,6 +272,8 @@ body {
 			#linkedIn, #email, #gitHub{
 				margin: auto;
 				opacity: 0.5;
+        padding-left: 20px;
+        padding-right: 20px;
 			}
       #email{
         margin: 20px;
