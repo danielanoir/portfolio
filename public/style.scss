@@ -232,8 +232,6 @@ body {
           display: inline-flex;
           .projectOne {
             background-image: url("./images/projectOne.jpg");
-            background-size: cover;
-            background-position: center;
           }
           .projectOne:hover {
             opacity: 0.8;
@@ -242,6 +240,7 @@ body {
           .projectTwo {
             background-image: url("./images/projectTwo.jpg");
           }
+
           .projectTwo:hover {
             opacity: 0.8;
           }
@@ -253,12 +252,12 @@ body {
           }
 
 					.projectOne, .projectTwo, .projectThree {
-						width: 300px;
-						height: 500px;
+						width: 420px;
+						height: 675px;
 						border: solid $hoverGray 1px;
-            background-size: cover;
-            background-position: center;
-            div {
+            background-size: contain;
+            background-position: top;
+            .projectDiv {
               color: $darkGray;
               font-family: 'Josefin Slab', serif;
               font-size: 25px;

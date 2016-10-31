@@ -180,9 +180,7 @@ body .projectsPage .projectsPopOut {
   body .projectsPage .projectsPopOut .projectsContainer {
     display: inline-flex; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne {
-      background-image: url("./images/projectOne.jpg");
-      background-size: cover;
-      background-position: center; }
+      background-image: url("./images/projectOne.jpg"); }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
       opacity: 0.8; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
@@ -194,12 +192,12 @@ body .projectsPage .projectsPopOut {
     body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
       opacity: 0.8; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-      width: 300px;
-      height: 500px;
+      width: 420px;
+      height: 675px;
       border: solid #7A8C91 1px;
-      background-size: cover;
-      background-position: center; }
-      body .projectsPage .projectsPopOut .projectsContainer .projectOne div, body .projectsPage .projectsPopOut .projectsContainer .projectTwo div, body .projectsPage .projectsPopOut .projectsContainer .projectThree div {
+      background-size: contain;
+      background-position: top; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv {
         color: #484A4A;
         font-family: 'Josefin Slab', serif;
         font-size: 25px;
