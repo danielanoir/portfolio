@@ -239,6 +239,9 @@ body {
           }
           .projectOne:hover {
             opacity: 1;
+            .projectDiv {
+              background-color: #fcedab;
+            }
           }
 
           .projectTwo {
@@ -246,9 +249,11 @@ body {
             background-repeat: none;
             opacity: 0.9;
           }
-
           .projectTwo:hover {
             opacity: 1;
+            .projectDiv {
+              background-color: #fcedab;
+            }
           }
           .projectThree {
             background-image: url("./images/projectThree.jpg");
@@ -257,6 +262,9 @@ body {
           }
           .projectThree:hover {
             opacity: 1;
+            .projectDiv {
+              background-color: #fcedab;
+            }
           }
 
 					.projectOne, .projectTwo, .projectThree {

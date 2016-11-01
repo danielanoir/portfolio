@@ -187,18 +187,24 @@ body .projectsPage .projectsPopOut {
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
       opacity: 1; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv {
+        background-color: #fcedab; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
       background-image: url("./images/projectTwo.jpg");
       background-repeat: none;
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover {
       opacity: 1; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv {
+        background-color: #fcedab; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       background-image: url("./images/projectThree.jpg");
       background-repeat: none;
       opacity: 0.9; }
     body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
       opacity: 1; }
+      body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv {
+        background-color: #fcedab; }
     body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
       width: 380px;
       height: 600px;
