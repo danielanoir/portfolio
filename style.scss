@@ -1,20 +1,18 @@
 /*
 Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
-        on line 42 of style.css
+        on line 47 of style.css
 
-37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-38: /usr/local/bin/sass:22:in `load'
-39: /usr/local/bin/sass:22:in `<main>'
-40: *\/
-41: body:before {
-42:   white-space: pre;
-43:   font-family: monospace;
-44:   content: "Error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'"; }
-45: 
-46: /*# sourceMappingURL=style.css.map *\/
+42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+43: /usr/local/bin/sass:22:in `load'
+44: /usr/local/bin/sass:22:in `<main>'
+45: *\/
+46: body:before {
+47:   white-space: pre;
+48:   font-family: monospace;
+49:   content: "Error: Invalid CSS after \"...y: \\\"Backtrace\": expected \";\", was \":\\\" (no value)...\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: *\/\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: *\/\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\"Error: Invalid property: \\\"Backtrace:\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map *\/\"; }"; }
 
 Backtrace:
-style.css:42
+style.css:47
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:486:in `block in tabulate'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each_with_index'
@@ -39,4 +37,4 @@ style.css:42
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: */\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \"Error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map */"; }
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 47 of style.css\A \A 42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 43: /usr/local/bin/sass:22:in `load'\A 44: /usr/local/bin/sass:22:in `<main>'\A 45: */\A 46: body:before {\A 47:   white-space: pre;\A 48:   font-family: monospace;\A 49:   content: \"Error: Invalid CSS after \\"...y: \\\\"Backtrace\\": expected \\";\\", was \\":\\\\" (no value)...\\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \\"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: */\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\\"Error: Invalid property: \\\\"Backtrace:\\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map */\\"; }\"; }"; }
