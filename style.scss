@@ -1,40 +1,287 @@
-/*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
-        on line 47 of style.css
+$basicFont: 'Oxygen', 'Source Sans Pro', sans-serif;
 
-42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-43: /usr/local/bin/sass:22:in `load'
-44: /usr/local/bin/sass:22:in `<main>'
-45: *\/
-46: body:before {
-47:   white-space: pre;
-48:   font-family: monospace;
-49:   content: "Error: Invalid CSS after \"...y: \\\"Backtrace\": expected \";\", was \":\\\" (no value)...\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: *\/\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: *\/\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\"Error: Invalid property: \\\"Backtrace:\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map *\/\"; }"; }
+$darkGray: #484A4A;
+$hoverGray: #7A8C91;
 
-Backtrace:
-style.css:47
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:486:in `block in tabulate'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each_with_index'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `tabulate'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 47 of style.css\A \A 42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 43: /usr/local/bin/sass:22:in `load'\A 44: /usr/local/bin/sass:22:in `<main>'\A 45: */\A 46: body:before {\A 47:   white-space: pre;\A 48:   font-family: monospace;\A 49:   content: \"Error: Invalid CSS after \\"...y: \\\\"Backtrace\\": expected \\";\\", was \\":\\\\" (no value)...\\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \\"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: */\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\\"Error: Invalid property: \\\\"Backtrace:\\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map */\\"; }\"; }"; }
+@keyframes fadein{
+   from{opacity:0;}
+   to{opacity:1;}
+}
+
+.welcomeText{
+   animation: fadein 2s;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+	.navContainer {
+    z-index: 1;
+		position: fixed;
+		background-color: white;
+		width: 100%;
+		padding: 20px;
+    margin-top: 0px;
+    text-align: right;
+			.navLinks {
+				text-decoration: none;
+				font-family: $basicFont;
+				font-weight: lighter;
+				padding: 15px;
+        margin-right: 20px;
+				color: $darkGray;
+				font-size: 17px;
+			}
+			a:hover {
+				color: $hoverGray;
+			}
+		}
+
+.outerContainer{
+	.innerContainer {
+		background-image: url("./images/water.jpg");
+    background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+    height: 100vh;
+		background-repeat: no-repeat;
+		padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+		.welcomeText {
+      //margin-top pushes text down.
+			margin-top: 20vh;
+			font-family: $basicFont;
+			letter-spacing: 3px;
+			text-align: center;
+			color: white;
+			h1{
+				font-size: 70px;
+				font-weight: normal;
+				margin-bottom: 0px;
+			}
+			h2{
+				font-size: 30px;
+				margin-top: 0px;
+				margin-bottom: 70px;
+				font-weight: lighter;
+			}
+
+			.roundArrow {
+				margin: auto;
+			}
+			#downArrow {
+        border: solid white;
+        border-radius: 1000px;
+				text-decoration: none;
+				font-size: 100px;
+        padding: 15px 20px 15px 20px;
+				background-color: transparent;
+			}
+			#downArrow:hover {
+				color: white;
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+.aboutArrowDiv {
+  // display: inline-flex;
+  // align-self: flex-end;
+}
+.skillsArrowDiv {
+  // display: flex;
+  // align-self: flex-end;
+}
+#halfDownArrow {
+	border-radius: 1000px 1000px 0px 0px;
+  background-color: transparent;
+  border-top: solid white;
+	border-left: solid white;
+	border-right: solid white;
+	border-bottom: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 100px;
+  align-self: flex-end;
+}
+#halfDownArrow:hover {
+	color: white;
+	opacity: 0.5;
+}
+.projectsArrowDiv {
+  display: flex;
+  justify-content: center;
+  // margin-top: -10px;
+}
+
+.aboutPage{
+	background-image: url("./images/dimensional.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+  height: 100vh;
+	background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+	.aboutPopOut{
+    align-self: center;
+		background-color: white;
+    width: 500px;
+    height: 200px;
+    max-width: 500px;
+		padding: 60px;
+		line-height: 30px;
+			#aboutHeading{
+				color: $darkGray;
+				font-family: $basicFont;
+				font-size: 40px;
+				font-weight: normal;
+			}
+			#aboutText{
+				font-family: $basicFont;
+				letter-spacing: 3px;
+				font-size: 16px;
+				color: #6A6D6E;
+			}
+		}
+    .invisiblePopOut {
+      background-color: transparent;
+      align-self: center;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+  		padding: 60px;
+  		line-height: 30px;
+    }
+	}
+//
+	.skillsPage{
+		background-image: url("./images/skills.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh;
+		.skillsPopOut{
+      align-self: center;
+  		background-color: white;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+  		padding: 60px;
+  		line-height: 30px;
+				#skillsHeading{
+					color: $darkGray;
+					font-family: $basicFont;
+					font-size: 40px;
+					font-weight: normal;
+				}
+				#skillsText{
+					font-family: $basicFont;
+					letter-spacing: 3px;
+					font-size: 16px;
+					color: #6A6D6E;
+				}
+			}
+      .invisiblePopOut2 {
+        background-color: transparent;
+        align-self: center;
+        width: 500px;
+        height: 200px;
+        max-width: 500px;
+    		padding: 60px;
+    		line-height: 30px;
+      }
+		}
+
+	.projectsPage{
+    height: 100vh;
+		.projectsPopOut{
+			padding-top: 10vh;
+      padding-bottom: 10vh;
+			text-align: center;
+			line-height: 30px;
+			margin: auto;
+				#projectsHeading{
+					color: $darkGray;
+					font-family: $basicFont;
+					font-size: 40px;
+					font-weight: normal;
+				}
+				// #projectsText{
+				// 	font-family: $basicFont;
+				// 	letter-spacing: 3px;
+				// 	font-size: 12px;
+				// 	color: #6A6D6E;
+				// }
+
+        .titles {
+          font-size: 20px;
+          color: $darkGray;
+          text-decoration: none;
+        }
+
+				.projectsContainer {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
+          align-content: center;
+
+          width: 100%;
+          .projectOne:hover, .projectTwo:hover, .projectThree:hover, .projectFour:hover{
+            opacity: 1;
+            .projectDiv {
+              background-color: #fcedab;
+            }
+          }
+					.projectOne, .projectTwo, .projectThree, .projectFour{
+            min-width: 280px;
+            opacity: 0.9;
+						max-width: 380px;
+						border: solid $hoverGray 1px;
+            .projectDiv {
+              color: $darkGray;
+              font-family: 'Josefin Slab', serif;
+              font-size: 20px;
+              font-size: 18px;
+              padding-top: 10px;
+              max-width: 380px;
+            }
+        	}
+				}
+			}
+		}
+
+		.footer {
+      text-align: center;
+      margin-top: 100px;
+			padding-top: 50px;
+			padding-bottom: 40px;
+      border-top: solid #e8e8e8 30px;
+			.emailLink, .linkedinLink, .githubLink {
+				margin: auto;
+        opacity: 0.9;
+			}
+			.linkedinLink {
+				margin: auto;
+        padding-left: 100px;
+        padding-right: 90px;
+			}
+			.githubLink{
+				margin: auto;
+			}
+			.emailLink:hover, .linkedinLink:hover, .githubLink:hover {
+				opacity: 1;
+			}
+		}
+
+}

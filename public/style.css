@@ -34,9 +34,11 @@ body {
     background-attachment: fixed;
     height: 100vh;
     background-repeat: no-repeat;
-    padding-top: 10px; }
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; }
     body .outerContainer .innerContainer .welcomeText {
-      margin-top: 150px;
+      margin-top: 20vh;
       font-family: "Oxygen", "Source Sans Pro", sans-serif;
       letter-spacing: 3px;
       text-align: center;
@@ -62,12 +64,6 @@ body {
       body .outerContainer .innerContainer .welcomeText #downArrow:hover {
         color: white;
         opacity: 0.5; }
-  body .aboutArrowDiv {
-    display: flex;
-    justify-content: center; }
-  body .skillsArrowDiv {
-    display: flex;
-    justify-content: center; }
   body #halfDownArrow {
     border-radius: 1000px 1000px 0px 0px;
     background-color: transparent;
@@ -77,35 +73,30 @@ body {
     border-bottom: none;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 100px; }
+    font-size: 100px;
+    align-self: flex-end; }
   body #halfDownArrow:hover {
     color: white;
     opacity: 0.5; }
   body .projectsArrowDiv {
     display: flex;
     justify-content: center; }
-  body #upsideHalfDownArrow {
-    border-radius: 1000px 1000px 0px 0px;
-    background-color: transparent;
-    border-top: solid black;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: none;
-    padding-left: 70px;
-    padding-right: 70px;
-    font-size: 100px; }
   body .aboutPage {
     background-image: url("./images/dimensional.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
     body .aboutPage .aboutPopOut {
+      align-self: center;
       background-color: white;
       width: 500px;
+      height: 200px;
       max-width: 500px;
-      display: inline-block;
       padding: 60px;
       line-height: 30px; }
       body .aboutPage .aboutPopOut #aboutHeading {
@@ -118,18 +109,30 @@ body {
         letter-spacing: 3px;
         font-size: 16px;
         color: #6A6D6E; }
+    body .aboutPage .invisiblePopOut {
+      background-color: transparent;
+      align-self: center;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
   body .skillsPage {
     background-image: url("./images/skills.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh; }
     body .skillsPage .skillsPopOut {
+      align-self: center;
       background-color: white;
-      margin-left: auto;
-      margin-right: 0px;
       width: 500px;
+      height: 200px;
+      max-width: 500px;
       padding: 60px;
       line-height: 30px; }
       body .skillsPage .skillsPopOut #skillsHeading {
@@ -142,12 +145,19 @@ body {
         letter-spacing: 3px;
         font-size: 16px;
         color: #6A6D6E; }
+    body .skillsPage .invisiblePopOut2 {
+      background-color: transparent;
+      align-self: center;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
   body .projectsPage {
-    padding-bottom: 200px;
-    height: 100vh;
-    width: 100vw; }
+    height: 100vh; }
     body .projectsPage .projectsPopOut {
-      padding-top: 200px;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
       text-align: center;
       line-height: 30px;
       margin: auto; }
@@ -159,45 +169,43 @@ body {
       body .projectsPage .projectsPopOut #projectsText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
-        font-size: 16px;
+        font-size: 12px;
         color: #6A6D6E; }
       body .projectsPage .projectsPopOut .titles {
         font-size: 25px;
         color: #484A4A;
         text-decoration: none; }
       body .projectsPage .projectsPopOut .projectsContainer {
-        display: inline-flex; }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        width: 100%; }
         body .projectsPage .projectsPopOut .projectsContainer .projectOne {
           background-image: url("./images/projectOne.jpg");
-          background-repeat: none;
-          opacity: 0.9; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover {
-          opacity: 1; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv {
-            background-color: #fcedab; }
+          background-size: contain; }
         body .projectsPage .projectsPopOut .projectsContainer .projectTwo {
           background-image: url("./images/projectTwo.jpg");
-          background-repeat: none;
-          opacity: 0.9; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover {
-          opacity: 1; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv {
-            background-color: #fcedab; }
+          background-size: contain; }
         body .projectsPage .projectsPopOut .projectsContainer .projectThree {
           background-image: url("./images/projectThree.jpg");
-          background-repeat: none;
-          opacity: 0.9; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover {
+          background-size: contain; }
+        body .projectsPage .projectsPopOut .projectsContainer .projectFour {
+          background-image: url("./images/projectFour.jpg");
+          background-size: auto; }
+        body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover {
           opacity: 1; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv {
+          body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover .projectDiv {
             background-color: #fcedab; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree {
-          width: 380px;
-          height: 600px;
+        body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree, body .projectsPage .projectsPopOut .projectsContainer .projectFour {
+          background-repeat: none;
+          opacity: 0.9;
+          max-width: 380px;
           border: solid #7A8C91 1px;
-          background-size: contain;
           background-position: top; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv {
+          body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour .projectDiv {
             color: #484A4A;
             font-family: 'Josefin Slab', serif;
             font-size: 25px;
@@ -206,14 +214,14 @@ body {
             padding-top: 10px;
             background-color: white;
             height: 300px;
-            width: 380px;
+            max-width: 380px;
             border-right: solid #7A8C91 1px;
             border-left: solid #7A8C91 1px;
             border-bottom: solid #7A8C91 1px; }
   body .footer {
     text-align: center;
     margin-top: 100px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 40px;
     border-top: solid #e8e8e8 30px; }
     body .footer .emailLink, body .footer .linkedinLink, body .footer .githubLink {

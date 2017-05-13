@@ -4,8 +4,8 @@
 
   <head>
     <title>Daniela Noir</title>
-    <link rel="shortcut icon" href="public/images/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
   </head>
@@ -27,19 +27,20 @@
           <h1>Daniela Noir</h1>
           <h2>Full-stack web developer</h2>
           <div class="roundArrow">
-          <a id="downArrow"><img width=100px, src="public/images/arrow.jpg"></a>
+          <a id="downArrow"><img width=100px, src="images/arrow.jpg"></a>
         </div>
         </div>
       </div>
     </div>
-
+  <div id="containerDiv">
+  </div>
     <div class="aboutPage">
       <div class="aboutPopOut">
         <h1 id="aboutHeading">About</h1>
         <p id="aboutText"> Full-stack web developer with a passion for coding user-friendly apps and telling stories with data.</p>
       </div>
-      <div class="aboutArrowDiv">
-        <a id="halfDownArrow"><img width=100px, src="public/images/arrow.jpg"></a>
+        <a class="aboutArrowDiv" id="halfDownArrow"><img width=100px, src="images/arrow.jpg"></a>
+        <div class="invisiblePopOut">
       </div>
     </div>
 
@@ -47,11 +48,10 @@
       <div class="skillsPopOut">
         <h1 id="skillsHeading">Skills</h1>
         <p id="skillsText">HTML, CSS, SCSS, JavaScript, jQuery, AngularJS, Node.js, Express.js, D3, Ruby on Rails, Mongo, SQL Server</p>
-        <!-- <a href="resume.html" target="_blank">Resume</a> -->
       </div>
-      <div class="skillsArrowDiv">
-      <a id="halfDownArrow"><img width=100px, src="public/images/arrow.jpg"></a>
-    </div>
+      <a class="skillsArrowDiv" id="halfDownArrow"><img width=100px, src="images/arrow.jpg"></a>
+    <div class="invisiblePopOut2">
+  </div>
     </div>
 
     <div class="projectsPage">
@@ -75,25 +75,34 @@
             </div>
           </div>
         </a>
-        <a class="titles" href="./montyhall/index.htm" target="_blank">
+        <a class="titles" href="./fort_ellsworth/index.html" target="_blank">
+          <div class="projectFour">
+            <div class="projectDiv">
+              <h3>Condominiums</h3>
+              <p>Website for prospective Fort Ellsworth residents to learn about the community.<br><br>
+              JavaScript, jQuery, CSS/SCSS, Google Maps API, Twitter API</p>
+            </div>
+          </div>
+        </a>
+        <a class="titles" href="./retire" target="_blank">
         <div class="projectOne">
           <div class="projectDiv">
-            <h3>Monty Hall</h3>
-            <p>An interactive game demonstrating a probability puzzle, the Monty Hall problem. <br><br>
-            JavaScript, jQuery, AngularJS, CSS</p>
+            <h3>Retirement Calculator</h3>
+            <p>Calculator to help determine how many years it will take to retire based off income, savings and expenses.</p>
+            <p>JavaScript, AngularJS, jQuery, CSS/SCSS</p>
           </div>
         </div>
       </a>
         </div>
       </div>
+      <div class="footer">
+        <a class="emailLink" href="mailto:daniela@danielanoir.com"><img src="images/email.png" width="100" height="100"></a>
+        <a class="linkedinLink" href="https://www.linkedin.com/in/danielanoir" target="_blank"><img src="./images/linkedin.png" alt="View Daniela Noir's LinkedIn profile"  width="100" height="100">&nbsp;</span></a>
+        <a class="githubLink" href="https://github.com/danielanoir" target="_blank"><img src="./images/github.png" width="100" height="100"></a>
+      </div>
     </div>
 
-  <div class="footer">
-      <a class="emailLink" href="mailto:daniela@danielanoir.com"><img src="public/images/email.png" width="100" height="100"></a>
-      <a class="linkedinLink" href="https://www.linkedin.com/in/danielanoir" target="_blank"><img src="./public/images/linkedin.png" alt="View Daniela Noir's LinkedIn profile"  width="100" height="100">&nbsp;</span></a>
-      <a class="githubLink" href="https://github.com/danielanoir" target="_blank"><img src="./public/images/github.png" width="100" height="100"></a>
-  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="public/main.js"></script>
+    <script src="main.js"></script>
    </body>
 </html>

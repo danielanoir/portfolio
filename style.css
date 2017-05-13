@@ -1,49 +1,215 @@
-/*
-Error: Invalid CSS after "...d CSS after \\"": expected ";", was "...y: \\\\"Back..."
-        on line 40 of style.scss
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.welcomeText {
+  animation: fadein 2s; }
 
-35: /usr/local/bin/sass:22:in `<main>'
-36: *\/
-37: body:before {
-38:   white-space: pre;
-39:   font-family: monospace;
-40:   content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 47 of style.css\A \A 42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 43: /usr/local/bin/sass:22:in `load'\A 44: /usr/local/bin/sass:22:in `<main>'\A 45: *\/\A 46: body:before {\A 47:   white-space: pre;\A 48:   font-family: monospace;\A 49:   content: \"Error: Invalid CSS after \\"...y: \\\\"Backtrace\\": expected \\";\\", was \\":\\\\" (no value)...\\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: *\/\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \\"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: *\/\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\\"Error: Invalid property: \\\\"Backtrace:\\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map *\/\\"; }\"; }"; }
+body {
+  margin: 0 !important;
+  padding: 0 !important; }
+  body .navContainer {
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+    text-align: right; }
+    body .navContainer .navLinks {
+      text-decoration: none;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-weight: lighter;
+      padding: 15px;
+      margin-right: 20px;
+      color: #484A4A;
+      font-size: 17px; }
+    body .navContainer a:hover {
+      color: #7A8C91; }
+  body .outerContainer .innerContainer {
+    background-image: url("./images/water.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; }
+    body .outerContainer .innerContainer .welcomeText {
+      margin-top: 20vh;
+      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      letter-spacing: 3px;
+      text-align: center;
+      color: white; }
+      body .outerContainer .innerContainer .welcomeText h1 {
+        font-size: 70px;
+        font-weight: normal;
+        margin-bottom: 0px; }
+      body .outerContainer .innerContainer .welcomeText h2 {
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        font-weight: lighter; }
+      body .outerContainer .innerContainer .welcomeText .roundArrow {
+        margin: auto; }
+      body .outerContainer .innerContainer .welcomeText #downArrow {
+        border: solid white;
+        border-radius: 1000px;
+        text-decoration: none;
+        font-size: 100px;
+        padding: 15px 20px 15px 20px;
+        background-color: transparent; }
+      body .outerContainer .innerContainer .welcomeText #downArrow:hover {
+        color: white;
+        opacity: 0.5; }
+  body #halfDownArrow {
+    border-radius: 1000px 1000px 0px 0px;
+    background-color: transparent;
+    border-top: solid white;
+    border-left: solid white;
+    border-right: solid white;
+    border-bottom: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 100px;
+    align-self: flex-end; }
+  body #halfDownArrow:hover {
+    color: white;
+    opacity: 0.5; }
+  body .projectsArrowDiv {
+    display: flex;
+    justify-content: center; }
+  body .aboutPage {
+    background-image: url("./images/dimensional.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    body .aboutPage .aboutPopOut {
+      align-self: center;
+      background-color: white;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
+      body .aboutPage .aboutPopOut #aboutHeading {
+        color: #484A4A;
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        font-size: 40px;
+        font-weight: normal; }
+      body .aboutPage .aboutPopOut #aboutText {
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        letter-spacing: 3px;
+        font-size: 16px;
+        color: #6A6D6E; }
+    body .aboutPage .invisiblePopOut {
+      background-color: transparent;
+      align-self: center;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
+  body .skillsPage {
+    background-image: url("./images/skills.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh; }
+    body .skillsPage .skillsPopOut {
+      align-self: center;
+      background-color: white;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
+      body .skillsPage .skillsPopOut #skillsHeading {
+        color: #484A4A;
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        font-size: 40px;
+        font-weight: normal; }
+      body .skillsPage .skillsPopOut #skillsText {
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        letter-spacing: 3px;
+        font-size: 16px;
+        color: #6A6D6E; }
+    body .skillsPage .invisiblePopOut2 {
+      background-color: transparent;
+      align-self: center;
+      width: 500px;
+      height: 200px;
+      max-width: 500px;
+      padding: 60px;
+      line-height: 30px; }
+  body .projectsPage {
+    height: 100vh; }
+    body .projectsPage .projectsPopOut {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      text-align: center;
+      line-height: 30px;
+      margin: auto; }
+      body .projectsPage .projectsPopOut #projectsHeading {
+        color: #484A4A;
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        font-size: 40px;
+        font-weight: normal; }
+      body .projectsPage .projectsPopOut .titles {
+        font-size: 20px;
+        color: #484A4A;
+        text-decoration: none; }
+      body .projectsPage .projectsPopOut .projectsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        width: 100%; }
+        body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover {
+          opacity: 1; }
+          body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover .projectDiv {
+            background-color: #fcedab; }
+        body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree, body .projectsPage .projectsPopOut .projectsContainer .projectFour {
+          min-width: 280px;
+          opacity: 0.9;
+          max-width: 380px;
+          border: solid #7A8C91 1px; }
+          body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour .projectDiv {
+            color: #484A4A;
+            font-family: 'Josefin Slab', serif;
+            font-size: 20px;
+            font-size: 18px;
+            padding-top: 10px;
+            max-width: 380px; }
+  body .footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-top: solid #e8e8e8 30px; }
+    body .footer .emailLink, body .footer .linkedinLink, body .footer .githubLink {
+      margin: auto;
+      opacity: 0.9; }
+    body .footer .linkedinLink {
+      margin: auto;
+      padding-left: 100px;
+      padding-right: 90px; }
+    body .footer .githubLink {
+      margin: auto; }
+    body .footer .emailLink:hover, body .footer .linkedinLink:hover, body .footer .githubLink:hover {
+      opacity: 1; }
 
-Backtrace:
-style.scss:40
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:777:in `block in try_declaration'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...d CSS after \\\"\": expected \";\", was \"...y: \\\\\"Back...\"\A         on line 40 of style.scss\A \A 35: /usr/local/bin/sass:22:in `<main>'\A 36: */\A 37: body:before {\A 38:   white-space: pre;\A 39:   font-family: monospace;\A 40:   content: \"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 47 of style.css\A \A 42: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 43: /usr/local/bin/sass:22:in `load'\A 44: /usr/local/bin/sass:22:in `<main>'\A 45: */\A 46: body:before {\A 47:   white-space: pre;\A 48:   font-family: monospace;\A 49:   content: \\"Error: Invalid CSS after \\\"...y: \\\\\"Backtrace\\\": expected \\\";\\\", was \\\":\\\\\" (no value)...\\\"\A         on line 42 of style.scss\A \A 37: /usr/local/bin/sass:22:in `<main>'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \\\"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 42 of style.css\A \A 37: /var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'\A 38: /usr/local/bin/sass:22:in `load'\A 39: /usr/local/bin/sass:22:in `<main>'\A 40: */\A 41: body:before {\A 42:   white-space: pre;\A 43:   font-family: monospace;\A 44:   content: \\\\"Error: Invalid property: \\\\\"Backtrace:\\\\\" (no value).\A         on line 4 of style.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - style.css\A 3: \A 4: Backtrace:\A 5: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\\\"; }\A 45: \A 46: /*# sourceMappingURL=style.css.map */\\\"; }\\"; }\"; }"; }
+/*# sourceMappingURL=style.css.map */
