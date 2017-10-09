@@ -22,15 +22,21 @@ body {
 		width: 100%;
 		padding: 20px;
     margin-top: 0px;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #c4c5c6;
+    // text-align: right;
+
 			.navLinks {
 				text-decoration: none;
 				font-family: $basicFont;
 				font-weight: lighter;
-				padding: 15px;
-        margin-right: 20px;
+				padding: 3px 15px 3px 15px;
+        // margin-right: 20px;
 				color: $darkGray;
-				font-size: 17px;
+				font-size: 21px;
 			}
 			a:hover {
 				color: $hoverGray;
@@ -39,7 +45,7 @@ body {
 
 .outerContainer{
 	.innerContainer {
-		background-image: url("./images/water.jpg");
+		background-image: url("./images/stack.jpg");
     background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -51,32 +57,31 @@ body {
     // align-items: center;
 		.welcomeText {
       //margin-top pushes text down.
+      text-shadow: 1px 1px 2px $hoverGray;
 			margin-top: 20vh;
 			font-family: $basicFont;
-			letter-spacing: 3px;
+			// letter-spacing: 3px;
 			text-align: center;
 			color: white;
 			h1{
-				font-size: 70px;
+				font-size: 4.5vmax;
 				font-weight: normal;
 				margin-bottom: 0px;
 			}
 			h2{
-				font-size: 30px;
+				font-size: 2.5vmax;
 				margin-top: 0px;
 				margin-bottom: 70px;
 				font-weight: lighter;
 			}
 
-			.roundArrow {
-				margin: auto;
-			}
 			#downArrow {
-        border: solid white;
+        border: solid white 3px;
+        box-shadow: 1px 1px 2px $darkGray;
         border-radius: 1000px;
 				text-decoration: none;
 				font-size: 100px;
-        padding: 15px 20px 15px 20px;
+        padding: 5px 10px 5px 10px;
 				background-color: transparent;
 			}
 			#downArrow:hover {
@@ -87,24 +92,16 @@ body {
 	}
 }
 
-.aboutArrowDiv {
-  // display: inline-flex;
-  // align-self: flex-end;
-}
-.skillsArrowDiv {
-  // display: flex;
-  // align-self: flex-end;
-}
 #halfDownArrow {
 	border-radius: 1000px 1000px 0px 0px;
   background-color: transparent;
-  border-top: solid white;
-	border-left: solid white;
-	border-right: solid white;
+  border-top: solid white 3px;
+	border-left: solid white 3px;
+	border-right: solid white 3px;
 	border-bottom: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 100px;
+  padding: 35px 12px 30px 12px;
+  font-size: 1vmax;
+  box-shadow: 1px 1px 2px $darkGray;
   align-self: flex-end;
 }
 #halfDownArrow:hover {
@@ -130,11 +127,13 @@ body {
 	.aboutPopOut{
     align-self: center;
 		background-color: white;
+    opacity: 0.9;
     width: 500px;
-    height: 200px;
+    min-height: 200px;
+    max-height: 450px;
     max-width: 500px;
-		padding: 60px;
-		line-height: 30px;
+		padding: 20px 30px 30px 20px;
+		// line-height: 30px;
 			#aboutHeading{
 				color: $darkGray;
 				font-family: $basicFont;
@@ -144,7 +143,7 @@ body {
 			#aboutText{
 				font-family: $basicFont;
 				letter-spacing: 3px;
-				font-size: 16px;
+				font-size: 20px;
 				color: #6A6D6E;
 			}
 		}
@@ -154,7 +153,8 @@ body {
       width: 500px;
       height: 200px;
       max-width: 500px;
-  		padding: 60px;
+      min-width: 0px;
+  		// padding: 60px;
   		line-height: 30px;
     }
 	}
@@ -172,22 +172,25 @@ body {
 		.skillsPopOut{
       align-self: center;
   		background-color: white;
+      opacity: 0.9;
       width: 500px;
-      height: 200px;
-      max-width: 500px;
-  		padding: 60px;
+      min-height: 200px;
+      max-height: 500px;
+      padding: 20px 20px 30px 30px;
   		line-height: 30px;
 				#skillsHeading{
 					color: $darkGray;
 					font-family: $basicFont;
 					font-size: 40px;
 					font-weight: normal;
+          text-align: right;
 				}
 				#skillsText{
 					font-family: $basicFont;
 					letter-spacing: 3px;
-					font-size: 16px;
+					font-size: 20px;
 					color: #6A6D6E;
+          text-align: right;
 				}
 			}
       .invisiblePopOut2 {
@@ -196,31 +199,33 @@ body {
         width: 500px;
         height: 200px;
         max-width: 500px;
+        min-width: 0px;
     		padding: 60px;
     		line-height: 30px;
       }
 		}
 
 	.projectsPage{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 400vh;
+    background-image: url("./images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 		.projectsPopOut{
-			padding-top: 10vh;
+			padding-top: 5vh;
       padding-bottom: 10vh;
 			text-align: center;
-			line-height: 30px;
-			margin: auto;
+			// line-height: 30px;
+			// margin: auto;
 				#projectsHeading{
-					color: $darkGray;
+          text-shadow: 1px 1px 2px $darkGray;
+					color: white;
 					font-family: $basicFont;
-					font-size: 40px;
-					font-weight: normal;
+					font-size: 50px;
+					font-weight: bold;
 				}
-				// #projectsText{
-				// 	font-family: $basicFont;
-				// 	letter-spacing: 3px;
-				// 	font-size: 12px;
-				// 	color: #6A6D6E;
-				// }
 
         .titles {
           font-size: 20px;
@@ -233,28 +238,58 @@ body {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
-          align-items: flex-start;
-          align-content: center;
-
+          .projectDiv {
+            box-shadow: 1px 1px 2px $darkGray;
+            display: flex;
+            align-items: center;
+            .projectTitle {
+              visibility: visible;
+              position: absolute;
+              max-width: 400px;
+              min-width:80px;
+              padding: 60px 0px 60px 0px;
+              width: 88%;
+              text-align: center;
+              h3 {
+                font-size: 35px;
+                word-wrap: break-word;
+              }
+            }
+            .projectDescription {
+              height: 70%;
+              visibility: hidden;
+              position: relative;
+              padding: 0px 50px 0px 50px;
+              p {
+                font-size: 20px;
+                color: black;
+              }
+          }
+          }
           width: 100%;
           .projectOne:hover, .projectTwo:hover, .projectThree:hover, .projectFour:hover{
-            opacity: 1;
             .projectDiv {
-              background-color: #fcedab;
+              background-color: #e2fccc;
+              h3 {
+                visibility: hidden;
+              }
+              p {
+                visibility: visible;
+              }
             }
           }
 					.projectOne, .projectTwo, .projectThree, .projectFour{
-            min-width: 280px;
-            opacity: 0.9;
-						max-width: 380px;
-						border: solid $hoverGray 1px;
+            opacity: .9;
+            margin: 25px 15px 25px 15px;
+            background-color: white;
             .projectDiv {
               color: $darkGray;
               font-family: 'Josefin Slab', serif;
               font-size: 20px;
               font-size: 18px;
-              padding-top: 10px;
-              max-width: 380px;
+              min-width: 200px;
+              max-width: 400px;
+              height: 300px;
             }
         	}
 				}
@@ -262,23 +297,35 @@ body {
 		}
 
 		.footer {
-      text-align: center;
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 100px;
-			padding-top: 50px;
-			padding-bottom: 40px;
-      border-top: solid #e8e8e8 30px;
+      margin-bottom: -150px;
+			padding-top: 30px;
+			padding-bottom: 20px;
+      border-top: solid #c4c5c6 1px;
+      justify-content: center;
 			.emailLink, .linkedinLink, .githubLink {
-				margin: auto;
+				// margin: auto;
         opacity: 0.9;
 			}
-			.linkedinLink {
-				margin: auto;
-        padding-left: 100px;
-        padding-right: 90px;
-			}
-			.githubLink{
-				margin: auto;
-			}
+			// .linkedinLink {
+			// 	margin: auto;
+      //   padding-left: 100px;
+      //   padding-right: 90px;
+			// }
+			// .githubLink{
+			// 	margin: auto;
+			// }
+      a {
+        width: 80px;
+        padding: 20px 70px 20px 70px;
+      }
+      .linkPic {
+        width: 90px;
+        height: 90px;
+      }
 			.emailLink:hover, .linkedinLink:hover, .githubLink:hover {
 				opacity: 1;
 			}
