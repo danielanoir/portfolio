@@ -45,7 +45,7 @@ body {
 
 .outerContainer{
 	.innerContainer {
-		background-image: url("./images/stack.jpg");
+		background-image: url("./images/brows.jpeg");
     background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -115,7 +115,7 @@ body {
 }
 
 .aboutPage{
-	background-image: url("./images/dimensional.jpg");
+	// background-image: url("./images/background1.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -160,7 +160,7 @@ body {
 	}
 //
 	.skillsPage{
-		background-image: url("./images/skills.jpg");
+		background-image: url("./images/background1.jpeg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -206,19 +206,18 @@ body {
 		}
 
 	.projectsPage{
-    min-height: 100vh;
+    min-height: 90vh;
     max-height: 400vh;
-    background-image: url("./images/coffee.jpg");
+    // background-color: #ffe649;
+    background-image: url("./images/background3.jpg");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+		background-position: center;
+		background-attachment: fixed;
     background-repeat: no-repeat;
 		.projectsPopOut{
 			padding-top: 5vh;
       padding-bottom: 10vh;
 			text-align: center;
-			// line-height: 30px;
-			// margin: auto;
 				#projectsHeading{
           text-shadow: 1px 1px 2px $darkGray;
 					color: white;
@@ -298,26 +297,15 @@ body {
 
 		.footer {
       background-color: white;
-      display: flex;
-      flex-wrap: wrap;
       margin-top: 100px;
       margin-bottom: -150px;
 			padding-top: 30px;
-			padding-bottom: 20px;
+			padding-bottom: 70px;
       border-top: solid #c4c5c6 1px;
       justify-content: center;
-			.emailLink, .linkedinLink, .githubLink {
-				// margin: auto;
+			.emailLink {
         opacity: 0.9;
 			}
-			// .linkedinLink {
-			// 	margin: auto;
-      //   padding-left: 100px;
-      //   padding-right: 90px;
-			// }
-			// .githubLink{
-			// 	margin: auto;
-			// }
       a {
         width: 80px;
         padding: 20px 70px 20px 70px;
@@ -326,7 +314,7 @@ body {
         width: 90px;
         height: 90px;
       }
-			.emailLink:hover, .linkedinLink:hover, .githubLink:hover {
+			.emailLink:hover {
 				opacity: 1;
 			}
 		}

@@ -31,7 +31,7 @@ body {
     body .navContainer a:hover {
       color: #7A8C91; }
   body .outerContainer .innerContainer {
-    background-image: url("./images/stack.jpg");
+    background-image: url("./images/brows.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -84,7 +84,6 @@ body {
     display: flex;
     justify-content: center; }
   body .aboutPage {
-    background-image: url("./images/dimensional.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -121,7 +120,7 @@ body {
       min-width: 0px;
       line-height: 30px; }
   body .skillsPage {
-    background-image: url("./images/skills.jpg");
+    background-image: url("./images/background1.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -161,9 +160,9 @@ body {
       padding: 60px;
       line-height: 30px; }
   body .projectsPage {
-    min-height: 100vh;
+    min-height: 90vh;
     max-height: 400vh;
-    background-image: url("./images/coffee.jpg");
+    background-image: url("./images/background3.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -231,15 +230,13 @@ body {
             height: 300px; }
   body .footer {
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: -150px;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     border-top: solid #c4c5c6 1px;
     justify-content: center; }
-    body .footer .emailLink, body .footer .linkedinLink, body .footer .githubLink {
+    body .footer .emailLink {
       opacity: 0.9; }
     body .footer a {
       width: 80px;
@@ -247,7 +244,7 @@ body {
     body .footer .linkPic {
       width: 90px;
       height: 90px; }
-    body .footer .emailLink:hover, body .footer .linkedinLink:hover, body .footer .githubLink:hover {
+    body .footer .emailLink:hover {
       opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
