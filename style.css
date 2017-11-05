@@ -41,11 +41,10 @@ body {
     display: flex;
     justify-content: center; }
     body .outerContainer .innerContainer .welcomeText {
-      text-shadow: 1px 1px 2px #7A8C91;
       margin-top: 20vh;
       font-family: "Oxygen", "Source Sans Pro", sans-serif;
       text-align: center;
-      color: white; }
+      color: #2a5560; }
       body .outerContainer .innerContainer .welcomeText h1 {
         font-size: 4.5vmax;
         font-weight: normal;
@@ -100,9 +99,10 @@ body {
       min-height: 200px;
       max-height: 450px;
       max-width: 500px;
-      padding: 20px 30px 30px 20px; }
+      padding: 20px 30px 30px 20px;
+      background-color: #254a54; }
       body .aboutPage .aboutPopOut #aboutHeading {
-        color: #484A4A;
+        color: white;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 40px;
         font-weight: normal; }
@@ -110,7 +110,7 @@ body {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
         font-size: 20px;
-        color: #6A6D6E; }
+        color: white; }
     body .aboutPage .invisiblePopOut {
       background-color: transparent;
       align-self: center;
@@ -168,7 +168,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat; }
     body .projectsPage .projectsPopOut {
-      padding-top: 5vh;
+      padding-top: 10vh;
       padding-bottom: 10vh;
       text-align: center; }
       body .projectsPage .projectsPopOut #projectsHeading {
@@ -235,7 +235,10 @@ body {
     padding-top: 30px;
     padding-bottom: 70px;
     border-top: solid #c4c5c6 1px;
-    justify-content: center; }
+    justify-content: center;
+    font-family: "Oxygen", "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    color: #2a5560; }
     body .footer .emailLink {
       opacity: 0.9; }
     body .footer a {

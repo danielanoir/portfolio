@@ -57,12 +57,12 @@ body {
     // align-items: center;
 		.welcomeText {
       //margin-top pushes text down.
-      text-shadow: 1px 1px 2px $hoverGray;
+      // text-shadow: 1px 1px 2px #171819;
 			margin-top: 20vh;
 			font-family: $basicFont;
 			// letter-spacing: 3px;
 			text-align: center;
-			color: white;
+			color: #2a5560;
 			h1{
 				font-size: 4.5vmax;
 				font-weight: normal;
@@ -133,9 +133,9 @@ body {
     max-height: 450px;
     max-width: 500px;
 		padding: 20px 30px 30px 20px;
-		// line-height: 30px;
+    background-color: #254a54;
 			#aboutHeading{
-				color: $darkGray;
+				color: white;
 				font-family: $basicFont;
 				font-size: 40px;
 				font-weight: normal;
@@ -144,7 +144,7 @@ body {
 				font-family: $basicFont;
 				letter-spacing: 3px;
 				font-size: 20px;
-				color: #6A6D6E;
+				color: white;
 			}
 		}
     .invisiblePopOut {
@@ -215,7 +215,7 @@ body {
 		background-attachment: fixed;
     background-repeat: no-repeat;
 		.projectsPopOut{
-			padding-top: 5vh;
+			padding-top: 10vh;
       padding-bottom: 10vh;
 			text-align: center;
 				#projectsHeading{
@@ -303,6 +303,9 @@ body {
 			padding-bottom: 70px;
       border-top: solid #c4c5c6 1px;
       justify-content: center;
+      font-family: $basicFont;
+      font-size: 20px;
+      color: #2a5560;
 			.emailLink {
         opacity: 0.9;
 			}
