@@ -59,12 +59,13 @@ body {
       //margin-top pushes text down.
       // text-shadow: 1px 1px 2px #171819;
 			margin-top: 20vh;
-			font-family: $basicFont;
+      font-family: 'Heebo', sans-serif;
 			// letter-spacing: 3px;
 			text-align: center;
-			color: #2a5560;
+			color: #2e5b64;
 			h1{
-				font-size: 4.5vmax;
+				font-size: 3.5vmax;
+        color: #232323;
 				font-weight: normal;
 				margin-bottom: 0px;
 			}

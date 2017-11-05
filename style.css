@@ -42,11 +42,12 @@ body {
     justify-content: center; }
     body .outerContainer .innerContainer .welcomeText {
       margin-top: 20vh;
-      font-family: "Oxygen", "Source Sans Pro", sans-serif;
+      font-family: 'Heebo', sans-serif;
       text-align: center;
-      color: #2a5560; }
+      color: #2e5b64; }
       body .outerContainer .innerContainer .welcomeText h1 {
-        font-size: 4.5vmax;
+        font-size: 3.5vmax;
+        color: #232323;
         font-weight: normal;
         margin-bottom: 0px; }
       body .outerContainer .innerContainer .welcomeText h2 {
