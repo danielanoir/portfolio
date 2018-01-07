@@ -47,21 +47,20 @@ body {
 	.innerContainer {
 		background-image: url("./images/brows.jpeg");
     background-size: cover;
-		background-position: center;
+		background-position: top;
 		background-attachment: fixed;
     height: 100vh;
 		background-repeat: no-repeat;
 		padding-top: 10px;
     display: flex;
-    justify-content: center;
-    // align-items: center;
+    // justify-content: flex-end;
+    flex-direction: row-reverse;
 		.welcomeText {
-      //margin-top pushes text down.
-      // text-shadow: 1px 1px 2px #171819;
-			margin-top: 20vh;
+      align-items: flex-end;
+			margin-top: 15vh;
+      margin-right: 2vw;
       font-family: 'Heebo', sans-serif;
-			// letter-spacing: 3px;
-			text-align: center;
+			text-align: right;
 			color: #2e5b64;
 			h1{
 				font-size: 3.5vmax;
@@ -75,22 +74,21 @@ body {
 				margin-bottom: 70px;
 				font-weight: lighter;
 			}
-
-			#downArrow {
-        border: solid white 3px;
-        box-shadow: 1px 1px 2px $darkGray;
-        border-radius: 1000px;
-				text-decoration: none;
-				font-size: 100px;
-        padding: 5px 10px 5px 10px;
-				background-color: transparent;
-			}
-			#downArrow:hover {
-				color: white;
-				opacity: 0.5;
-			}
 		}
+
 	}
+  .welcomeArrowDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .invisibleDiv {
+    width: 490px;
+    height: 100px;
+    align-items: flex-start;
+    margin-top: 40vh;
+    text-align: left;
+  }
+
 }
 
 #halfDownArrow {

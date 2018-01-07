@@ -9,7 +9,7 @@ $(document).ready(function(){
       scrollTop: $('.innerContainer').offset().top - 20
     }, 'fast');
   });
-  $(".roundArrow").click(function(e) {
+  $(".welcomeArrowDiv").click(function(e) {
     $('html, body').animate({
       scrollTop: $('.aboutPage').offset().top - 20
     }, 'fast');
