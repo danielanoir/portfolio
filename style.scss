@@ -114,23 +114,17 @@ body {
 }
 
 .aboutPage{
-	// background-image: url("./images/background1.jpeg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-  height: 100vh;
-	background-repeat: no-repeat;
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6vw;
 	.aboutPopOut{
-    align-self: center;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
 		background-color: white;
     opacity: 0.9;
-    width: 500px;
-    min-height: 200px;
-    max-height: 450px;
-    max-width: 500px;
+    width: 90vw;
 		padding: 20px 30px 30px 20px;
     background-color: #254a54;
 			#aboutHeading{
@@ -139,6 +133,12 @@ body {
 				font-size: 40px;
 				font-weight: normal;
 			}
+      #aboutHeading2{
+        color: white;
+        font-family: $basicFont;
+        font-size: 30px;
+        font-weight: normal;
+      }
 			#aboutText{
 				font-family: $basicFont;
 				letter-spacing: 3px;
@@ -146,18 +146,14 @@ body {
 				color: white;
 			}
 		}
-    .invisiblePopOut {
-      background-color: transparent;
-      align-self: center;
-      width: 500px;
-      height: 200px;
-      max-width: 500px;
-      min-width: 0px;
-  		// padding: 60px;
-  		line-height: 30px;
+    .aboutArrowDiv {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5vw;
+      align-self: flex-end;
     }
 	}
-//
+
 	.skillsPage{
 		background-image: url("./images/background1.jpeg");
 		background-size: cover;
@@ -165,49 +161,47 @@ body {
 		background-attachment: fixed;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    height: 100vh;
+    // justify-content: center;
+    min-height: 88vh;
+    flex-direction: column;
 		.skillsPopOut{
-      align-self: center;
+      margin-top: 6vw;
+      align-self: flex-start;
+      margin-left: auto;
+      margin-right: auto;
   		background-color: white;
       opacity: 0.9;
-      width: 500px;
-      min-height: 200px;
-      max-height: 500px;
+      width: 50vw;
       padding: 20px 20px 30px 30px;
   		line-height: 30px;
+      margin-bottom: 5vw;
 				#skillsHeading{
 					color: $darkGray;
 					font-family: $basicFont;
 					font-size: 40px;
 					font-weight: normal;
-          text-align: right;
+          text-align: center;
 				}
 				#skillsText{
 					font-family: $basicFont;
 					letter-spacing: 3px;
 					font-size: 20px;
 					color: #6A6D6E;
-          text-align: right;
+          text-align: center;
 				}
 			}
-      .invisiblePopOut2 {
-        background-color: transparent;
-        align-self: center;
-        width: 500px;
-        height: 200px;
-        max-width: 500px;
-        min-width: 0px;
-    		padding: 60px;
-    		line-height: 30px;
+      .skillsArrowDiv {
+        align-self: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 0px;
       }
 		}
 
 	.projectsPage{
     min-height: 90vh;
     max-height: 400vh;
-    // background-color: #ffe649;
     background-image: url("./images/background3.jpg");
     background-size: cover;
 		background-position: center;
@@ -240,42 +234,18 @@ body {
             box-shadow: 1px 1px 2px $darkGray;
             display: flex;
             align-items: center;
-            .projectTitle {
-              visibility: visible;
-              position: absolute;
-              max-width: 400px;
-              min-width:80px;
-              padding: 60px 0px 60px 0px;
-              width: 88%;
-              text-align: center;
+            flex-direction: column;
               h3 {
-                font-size: 35px;
-                word-wrap: break-word;
+                font-size: 30px;
               }
-            }
             .projectDescription {
-              height: 70%;
-              visibility: hidden;
-              position: relative;
-              padding: 0px 50px 0px 50px;
               p {
-                font-size: 20px;
+                font-size: 25px;
                 color: black;
               }
           }
           }
           width: 100%;
-          .projectOne:hover, .projectTwo:hover, .projectThree:hover, .projectFour:hover{
-            .projectDiv {
-              background-color: #e2fccc;
-              h3 {
-                visibility: hidden;
-              }
-              p {
-                visibility: visible;
-              }
-            }
-          }
 					.projectOne, .projectTwo, .projectThree, .projectFour{
             opacity: .9;
             margin: 25px 15px 25px 15px;

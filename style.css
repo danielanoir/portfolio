@@ -84,22 +84,17 @@ body {
     display: flex;
     justify-content: center; }
   body .aboutPage {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    background-repeat: no-repeat;
-    position: relative;
     display: flex;
-    justify-content: space-between; }
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6vw; }
     body .aboutPage .aboutPopOut {
-      align-self: center;
+      align-self: flex-start;
+      margin-left: auto;
+      margin-right: auto;
       background-color: white;
       opacity: 0.9;
-      width: 500px;
-      min-height: 200px;
-      max-height: 450px;
-      max-width: 500px;
+      width: 90vw;
       padding: 20px 30px 30px 20px;
       background-color: #254a54; }
       body .aboutPage .aboutPopOut #aboutHeading {
@@ -107,19 +102,21 @@ body {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 40px;
         font-weight: normal; }
+      body .aboutPage .aboutPopOut #aboutHeading2 {
+        color: white;
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        font-size: 30px;
+        font-weight: normal; }
       body .aboutPage .aboutPopOut #aboutText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
         font-size: 20px;
         color: white; }
-    body .aboutPage .invisiblePopOut {
-      background-color: transparent;
-      align-self: center;
-      width: 500px;
-      height: 200px;
-      max-width: 500px;
-      min-width: 0px;
-      line-height: 30px; }
+    body .aboutPage .aboutArrowDiv {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5vw;
+      align-self: flex-end; }
   body .skillsPage {
     background-image: url("./images/background1.jpeg");
     background-size: cover;
@@ -127,39 +124,37 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    height: 100vh; }
+    min-height: 88vh;
+    flex-direction: column; }
     body .skillsPage .skillsPopOut {
-      align-self: center;
+      margin-top: 6vw;
+      align-self: flex-start;
+      margin-left: auto;
+      margin-right: auto;
       background-color: white;
       opacity: 0.9;
-      width: 500px;
-      min-height: 200px;
-      max-height: 500px;
+      width: 50vw;
       padding: 20px 20px 30px 30px;
-      line-height: 30px; }
+      line-height: 30px;
+      margin-bottom: 5vw; }
       body .skillsPage .skillsPopOut #skillsHeading {
         color: #484A4A;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 40px;
         font-weight: normal;
-        text-align: right; }
+        text-align: center; }
       body .skillsPage .skillsPopOut #skillsText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
         font-size: 20px;
         color: #6A6D6E;
-        text-align: right; }
-    body .skillsPage .invisiblePopOut2 {
-      background-color: transparent;
-      align-self: center;
-      width: 500px;
-      height: 200px;
-      max-width: 500px;
-      min-width: 0px;
-      padding: 60px;
-      line-height: 30px; }
+        text-align: center; }
+    body .skillsPage .skillsArrowDiv {
+      align-self: flex-end;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: 0px; }
   body .projectsPage {
     min-height: 90vh;
     max-height: 400vh;
@@ -191,32 +186,13 @@ body {
         body .projectsPage .projectsPopOut .projectsContainer .projectDiv {
           box-shadow: 1px 1px 2px #484A4A;
           display: flex;
-          align-items: center; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectTitle {
-            visibility: visible;
-            position: absolute;
-            max-width: 400px;
-            min-width: 80px;
-            padding: 60px 0px 60px 0px;
-            width: 88%;
-            text-align: center; }
-            body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectTitle h3 {
-              font-size: 35px;
-              word-wrap: break-word; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription {
-            height: 70%;
-            visibility: hidden;
-            position: relative;
-            padding: 0px 50px 0px 50px; }
-            body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription p {
-              font-size: 20px;
-              color: black; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover .projectDiv {
-          background-color: #e2fccc; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv h3, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv h3, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv h3, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover .projectDiv h3 {
-            visibility: hidden; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectOne:hover .projectDiv p, body .projectsPage .projectsPopOut .projectsContainer .projectTwo:hover .projectDiv p, body .projectsPage .projectsPopOut .projectsContainer .projectThree:hover .projectDiv p, body .projectsPage .projectsPopOut .projectsContainer .projectFour:hover .projectDiv p {
-            visibility: visible; }
+          align-items: center;
+          flex-direction: column; }
+          body .projectsPage .projectsPopOut .projectsContainer .projectDiv h3 {
+            font-size: 30px; }
+          body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription p {
+            font-size: 25px;
+            color: black; }
         body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree, body .projectsPage .projectsPopOut .projectsContainer .projectFour {
           opacity: .9;
           margin: 25px 15px 25px 15px;
