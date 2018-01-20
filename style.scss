@@ -1,294 +1,62 @@
-$basicFont: 'Oxygen', 'Source Sans Pro', sans-serif;
+/*
+Error: Invalid CSS after "0": expected expression (e.g. 1px, bold), was "; }"
+        on line 3 of style.css
 
-$darkGray: #484A4A;
-$hoverGray: #7A8C91;
+1: @keyframes fadein {
+2:   from {
+3:     opacity: 0; }
+4:   to {
+5:     opacity: 1; } }
+6: .welcomeText {
+7:   animation: fadein 2s; }
+8: 
 
-@keyframes fadein{
-   from{opacity:0;}
-   to{opacity:1;}
-}
-
-.welcomeText{
-   animation: fadein 2s;
-}
-
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-	.navContainer {
-    z-index: 1;
-		position: fixed;
-		background-color: white;
-		width: 100%;
-		padding: 20px;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    border-bottom: solid 1px #c4c5c6;
-    // text-align: right;
-
-			.navLinks {
-				text-decoration: none;
-				font-family: $basicFont;
-				font-weight: lighter;
-				padding: 3px 15px 3px 15px;
-        // margin-right: 20px;
-				color: $darkGray;
-				font-size: 21px;
-			}
-			a:hover {
-				color: $hoverGray;
-			}
-		}
-
-.outerContainer{
-	.innerContainer {
-		background-image: url("./images/brows.jpeg");
-    background-size: cover;
-		background-position: top;
-		background-attachment: fixed;
-    height: 100vh;
-		background-repeat: no-repeat;
-		padding-top: 10px;
-    display: flex;
-    // justify-content: flex-end;
-    flex-direction: row-reverse;
-		.welcomeText {
-      align-items: flex-end;
-			margin-top: 15vh;
-      margin-right: 2vw;
-      font-family: 'Heebo', sans-serif;
-			text-align: right;
-			color: #2e5b64;
-			h1{
-				font-size: 3.5vmax;
-        color: #232323;
-				font-weight: normal;
-				margin-bottom: 0px;
-			}
-			h2{
-				font-size: 2.5vmax;
-				margin-top: 0px;
-				margin-bottom: 70px;
-				font-weight: lighter;
-			}
-		}
-
-	}
-  .welcomeArrowDiv {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .invisibleDiv {
-    width: 490px;
-    height: 100px;
-    align-items: flex-start;
-    margin-top: 40vh;
-    text-align: left;
-  }
-
-}
-
-#halfDownArrow {
-	border-radius: 1000px 1000px 0px 0px;
-  background-color: transparent;
-  border-top: solid white 3px;
-	border-left: solid white 3px;
-	border-right: solid white 3px;
-	border-bottom: none;
-  padding: 35px 12px 30px 12px;
-  font-size: 1vmax;
-  box-shadow: 1px 1px 2px $darkGray;
-  align-self: flex-end;
-}
-#halfDownArrow:hover {
-	color: white;
-	opacity: 0.5;
-}
-.projectsArrowDiv {
-  display: flex;
-  justify-content: center;
-  // margin-top: -10px;
-}
-
-.aboutPage{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 6vw;
-	.aboutPopOut{
-    align-self: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-		background-color: white;
-    opacity: 0.9;
-    width: 90vw;
-		padding: 20px 30px 30px 20px;
-    background-color: #254a54;
-			#aboutHeading{
-				color: white;
-				font-family: $basicFont;
-				font-size: 40px;
-				font-weight: normal;
-			}
-      #aboutHeading2{
-        color: white;
-        font-family: $basicFont;
-        font-size: 30px;
-        font-weight: normal;
-      }
-			#aboutText{
-				font-family: $basicFont;
-				letter-spacing: 3px;
-				font-size: 20px;
-				color: white;
-			}
-		}
-    .aboutArrowDiv {
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 5vw;
-      align-self: flex-end;
-    }
-	}
-
-	.skillsPage{
-		background-image: url("./images/background1.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: flex;
-    // justify-content: center;
-    min-height: 88vh;
-    flex-direction: column;
-		.skillsPopOut{
-      margin-top: 6vw;
-      align-self: flex-start;
-      margin-left: auto;
-      margin-right: auto;
-  		background-color: white;
-      opacity: 0.9;
-      width: 50vw;
-      padding: 20px 20px 30px 30px;
-  		line-height: 30px;
-      margin-bottom: 5vw;
-				#skillsHeading{
-					color: $darkGray;
-					font-family: $basicFont;
-					font-size: 40px;
-					font-weight: normal;
-          text-align: center;
-				}
-				#skillsText{
-					font-family: $basicFont;
-					letter-spacing: 3px;
-					font-size: 20px;
-					color: #6A6D6E;
-          text-align: center;
-				}
-			}
-      .skillsArrowDiv {
-        align-self: flex-end;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: 0px;
-      }
-		}
-
-	.projectsPage{
-    min-height: 90vh;
-    max-height: 400vh;
-    background-image: url("./images/background3.jpg");
-    background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-    background-repeat: no-repeat;
-		.projectsPopOut{
-			padding-top: 10vh;
-      padding-bottom: 10vh;
-			text-align: center;
-				#projectsHeading{
-          text-shadow: 1px 1px 2px $darkGray;
-					color: white;
-					font-family: $basicFont;
-					font-size: 50px;
-					font-weight: bold;
-				}
-
-        .titles {
-          font-size: 20px;
-          color: $darkGray;
-          text-decoration: none;
-        }
-
-				.projectsContainer {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          .projectDiv {
-            box-shadow: 1px 1px 2px $darkGray;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-              h3 {
-                font-size: 30px;
-              }
-            .projectDescription {
-              p {
-                font-size: 25px;
-                color: black;
-              }
-          }
-          }
-          width: 100%;
-					.projectOne, .projectTwo, .projectThree, .projectFour{
-            opacity: .9;
-            margin: 25px 15px 25px 15px;
-            background-color: white;
-            .projectDiv {
-              color: $darkGray;
-              font-family: 'Josefin Slab', serif;
-              font-size: 20px;
-              font-size: 18px;
-              min-width: 200px;
-              max-width: 400px;
-              height: 300px;
-            }
-        	}
-				}
-			}
-		}
-
-		.footer {
-      background-color: white;
-      margin-top: 100px;
-      margin-bottom: -150px;
-			padding-top: 30px;
-			padding-bottom: 70px;
-      border-top: solid #c4c5c6 1px;
-      justify-content: center;
-      font-family: $basicFont;
-      font-size: 20px;
-      color: #2a5560;
-			.emailLink {
-        opacity: 0.9;
-			}
-      a {
-        width: 80px;
-        padding: 20px 70px 20px 70px;
-      }
-      .linkPic {
-        width: 90px;
-        height: 90px;
-      }
-			.emailLink:hover {
-				opacity: 1;
-			}
-		}
-
-}
+Backtrace:
+style.css:3
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:738:in `assert_done'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:76:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:240:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script.rb:27:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:1151:in `parse_script'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:721:in `parse_property'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:692:in `parse_property_or_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:658:in `parse_line'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \"; }\"\A         on line 3 of style.css\A \A 1: @keyframes fadein {\A 2:   from {\A 3:     opacity: 0; }\A 4:   to {\A 5:     opacity: 1; } }\A 6: .welcomeText {\A 7:   animation: fadein 2s; }\A 8: "; }

@@ -1,3 +1,4 @@
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -6,10 +7,10 @@
 .welcomeText {
   animation: fadein 2s; }
 
-body {
+ {
   margin: 0 !important;
   padding: 0 !important; }
-  body .navContainer {
+   .navContainer {
     z-index: 1;
     position: fixed;
     background-color: white;
@@ -21,16 +22,16 @@ body {
     align-items: flex-end;
     flex-wrap: wrap;
     border-bottom: solid 1px #c4c5c6; }
-    body .navContainer .navLinks {
+     .navContainer .navLinks {
       text-decoration: none;
       font-family: "Oxygen", "Source Sans Pro", sans-serif;
       font-weight: lighter;
       padding: 3px 15px 3px 15px;
       color: #484A4A;
       font-size: 21px; }
-    body .navContainer a:hover {
+     .navContainer a:hover {
       color: #7A8C91; }
-  body .outerContainer .innerContainer {
+   .outerContainer .innerContainer {
     background-image: url("./images/brows.jpeg");
     background-size: cover;
     background-position: top;
@@ -40,33 +41,33 @@ body {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse; }
-    body .outerContainer .innerContainer .welcomeText {
+     .outerContainer .innerContainer .welcomeText {
       align-items: flex-end;
       margin-top: 15vh;
       margin-right: 2vw;
       font-family: 'Heebo', sans-serif;
       text-align: right;
       color: #2e5b64; }
-      body .outerContainer .innerContainer .welcomeText h1 {
+       .outerContainer .innerContainer .welcomeText h1 {
         font-size: 3.5vmax;
         color: #232323;
         font-weight: normal;
         margin-bottom: 0px; }
-      body .outerContainer .innerContainer .welcomeText h2 {
+       .outerContainer .innerContainer .welcomeText h2 {
         font-size: 2.5vmax;
         margin-top: 0px;
         margin-bottom: 70px;
         font-weight: lighter; }
-  body .outerContainer .welcomeArrowDiv {
+   .outerContainer .welcomeArrowDiv {
     margin-left: auto;
     margin-right: auto; }
-  body .outerContainer .invisibleDiv {
+   .outerContainer .invisibleDiv {
     width: 490px;
     height: 100px;
     align-items: flex-start;
     margin-top: 40vh;
     text-align: left; }
-  body #halfDownArrow {
+   #halfDownArrow {
     border-radius: 1000px 1000px 0px 0px;
     background-color: transparent;
     border-top: solid white 3px;
@@ -77,47 +78,72 @@ body {
     font-size: 1vmax;
     box-shadow: 1px 1px 2px #484A4A;
     align-self: flex-end; }
-  body #halfDownArrow:hover {
+   #halfDownArrow:hover {
     color: white;
     opacity: 0.5; }
-  body .projectsArrowDiv {
+   .projectsArrowDiv {
     display: flex;
     justify-content: center; }
-  body .aboutPage {
+   .aboutPage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 6vw; }
-    body .aboutPage .aboutPopOut {
+     .aboutPopOut {
       align-self: flex-start;
       margin-left: auto;
       margin-right: auto;
       background-color: white;
       opacity: 0.9;
-      width: 90vw;
-      padding: 20px 30px 30px 20px;
+      width: 70vw;
+      padding: 30px 80px 30px 80px;
       background-color: #254a54; }
-      body .aboutPage .aboutPopOut #aboutHeading {
+      .brows1 {
+        width: 40vw;
+        min-width: 200px;
+        float: left;
+        padding-right: 20px;
+      }
+      .brows5 {
+        width: 45vw;
+        min-width: 150px;
+        float: right;
+        padding-left: 20px;
+      }
+      .brows3 {
+        width: 20vw;
+        min-width: 150px;
+        float: right;
+        padding-left: 20px;
+      }
+      .brows4 {
+        width: 20vw;
+        min-width: 200px;
+        float: right;
+        padding-left: 20px;
+      }
+      #aboutHeading {
+        color: white;
+        font-family: "Oxygen", "Source Sans Pro", sans-serif;
+        font-size: 50px;
+        font-weight: normal; }
+       #aboutHeading2 {
         color: white;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 40px;
+        padding-top: 30px;
         font-weight: normal; }
-      body .aboutPage .aboutPopOut #aboutHeading2 {
-        color: white;
-        font-family: "Oxygen", "Source Sans Pro", sans-serif;
-        font-size: 30px;
-        font-weight: normal; }
-      body .aboutPage .aboutPopOut #aboutText {
+       #aboutText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
         font-size: 20px;
         color: white; }
-    body .aboutPage .aboutArrowDiv {
+     .aboutArrowDiv {
       margin-right: auto;
       margin-left: auto;
       margin-top: 5vw;
       align-self: flex-end; }
-  body .skillsPage {
+   .skillsPage {
     background-image: url("./images/background1.jpeg");
     background-size: cover;
     background-position: center;
@@ -126,7 +152,7 @@ body {
     display: flex;
     min-height: 88vh;
     flex-direction: column; }
-    body .skillsPage .skillsPopOut {
+     .skillsPage .skillsPopOut {
       margin-top: 6vw;
       align-self: flex-start;
       margin-left: auto;
@@ -137,25 +163,25 @@ body {
       padding: 20px 20px 30px 30px;
       line-height: 30px;
       margin-bottom: 5vw; }
-      body .skillsPage .skillsPopOut #skillsHeading {
+       .skillsPage .skillsPopOut #skillsHeading {
         color: #484A4A;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 40px;
         font-weight: normal;
         text-align: center; }
-      body .skillsPage .skillsPopOut #skillsText {
+       .skillsPage .skillsPopOut #skillsText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         letter-spacing: 3px;
         font-size: 20px;
         color: #6A6D6E;
         text-align: center; }
-    body .skillsPage .skillsArrowDiv {
+     .skillsPage .skillsArrowDiv {
       align-self: flex-end;
       margin-right: auto;
       margin-left: auto;
       margin-top: auto;
       margin-bottom: 0px; }
-  body .projectsPage {
+   .projectsPage {
     min-height: 90vh;
     max-height: 400vh;
     background-image: url("./images/background3.jpg");
@@ -163,41 +189,41 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat; }
-    body .projectsPage .projectsPopOut {
+     .projectsPage .projectsPopOut {
       padding-top: 10vh;
       padding-bottom: 10vh;
       text-align: center; }
-      body .projectsPage .projectsPopOut #projectsHeading {
+       .projectsPage .projectsPopOut #projectsHeading {
         text-shadow: 1px 1px 2px #484A4A;
         color: white;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 50px;
         font-weight: bold; }
-      body .projectsPage .projectsPopOut .titles {
+       .projectsPage .projectsPopOut .titles {
         font-size: 20px;
         color: #484A4A;
         text-decoration: none; }
-      body .projectsPage .projectsPopOut .projectsContainer {
+       .projectsPage .projectsPopOut .projectsContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectDiv {
+         .projectsPage .projectsPopOut .projectsContainer .projectDiv {
           box-shadow: 1px 1px 2px #484A4A;
           display: flex;
           align-items: center;
           flex-direction: column; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectDiv h3 {
+           .projectsPage .projectsPopOut .projectsContainer .projectDiv h3 {
             font-size: 30px; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription p {
+           .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription p {
             font-size: 25px;
             color: black; }
-        body .projectsPage .projectsPopOut .projectsContainer .projectOne, body .projectsPage .projectsPopOut .projectsContainer .projectTwo, body .projectsPage .projectsPopOut .projectsContainer .projectThree, body .projectsPage .projectsPopOut .projectsContainer .projectFour {
+         .projectsPage .projectsPopOut .projectsContainer .projectOne, .projectsPage .projectsPopOut .projectsContainer .projectTwo,  .projectsPage .projectsPopOut .projectsContainer .projectThree,  .projectsPage .projectsPopOut .projectsContainer .projectFour {
           opacity: .9;
           margin: 25px 15px 25px 15px;
           background-color: white; }
-          body .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv, body .projectsPage .projectsPopOut .projectsContainer .projectFour .projectDiv {
+           .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectFour .projectDiv {
             color: #484A4A;
             font-family: 'Josefin Slab', serif;
             font-size: 20px;
@@ -205,7 +231,7 @@ body {
             min-width: 200px;
             max-width: 400px;
             height: 300px; }
-  body .footer {
+   .footer {
     background-color: white;
     margin-top: 100px;
     margin-bottom: -150px;
@@ -216,15 +242,13 @@ body {
     font-family: "Oxygen", "Source Sans Pro", sans-serif;
     font-size: 20px;
     color: #2a5560; }
-    body .footer .emailLink {
+     .footer .emailLink {
       opacity: 0.9; }
-    body .footer a {
+     .footer a {
       width: 80px;
       padding: 20px 70px 20px 70px; }
-    body .footer .linkPic {
+     .footer .linkPic {
       width: 90px;
       height: 90px; }
-    body .footer .emailLink:hover {
+     .footer .emailLink:hover {
       opacity: 1; }
-
-/*# sourceMappingURL=style.css.map */
