@@ -96,8 +96,10 @@
       background-color: white;
       opacity: 0.9;
       width: 70vw;
-      padding: 30px 80px 30px 80px;
+      padding: 50px 80px 80px 80px;
       background-color: #254a54; }
+      .browsProcedure {
+      }
       .brows1 {
         width: 40vw;
         min-width: 200px;
@@ -110,28 +112,36 @@
         float: right;
         padding-left: 20px;
       }
+      .brows2 {
+        width:20vw;
+        min-width: 150px;
+        /*float:right;*/
+        padding-left:20px;
+      }
       .brows3 {
         width: 20vw;
         min-width: 150px;
-        float: right;
+        /*float: right;*/
         padding-left: 20px;
       }
       .brows4 {
         width: 20vw;
         min-width: 200px;
-        float: right;
+        /*float: right;*/
         padding-left: 20px;
       }
       #aboutHeading {
         color: white;
+        text-align: center;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
-        font-size: 50px;
+        font-size: 60px;
         font-weight: normal; }
        #aboutHeading2 {
         color: white;
+        text-align: center;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
-        font-size: 40px;
-        padding-top: 30px;
+        font-size: 50px;
+        padding-top: 50px;
         font-weight: normal; }
        #aboutText {
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
@@ -158,11 +168,17 @@
       margin-left: auto;
       margin-right: auto;
       background-color: white;
-      opacity: 0.9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*opacity: 0.9;*/
       width: 50vw;
       padding: 20px 20px 30px 30px;
       line-height: 30px;
       margin-bottom: 5vw; }
+      .kmPhoto {
+        width: 400px;
+      }
        .skillsPage .skillsPopOut #skillsHeading {
         color: #484A4A;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
@@ -189,38 +205,43 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat; }
-     .projectsPage .projectsPopOut {
+     .projectsPopOut {
       padding-top: 10vh;
       padding-bottom: 10vh;
       text-align: center; }
-       .projectsPage .projectsPopOut #projectsHeading {
+       #projectsHeading {
         text-shadow: 1px 1px 2px #484A4A;
         color: white;
         font-family: "Oxygen", "Source Sans Pro", sans-serif;
         font-size: 50px;
         font-weight: bold; }
-       .projectsPage .projectsPopOut .titles {
+       .titles {
         font-size: 20px;
         color: #484A4A;
         text-decoration: none; }
-       .projectsPage .projectsPopOut .projectsContainer {
+       .projectsContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%; }
-         .projectsPage .projectsPopOut .projectsContainer .projectDiv {
+         .projectDiv {
           box-shadow: 1px 1px 2px #484A4A;
           display: flex;
           align-items: center;
           flex-direction: column; }
-           .projectsPage .projectsPopOut .projectsContainer .projectDiv h3 {
+          .office {
+            width: 600px;
+            padding: 0px 50px 50px 50px;
+
+          }
+           h3 {
             font-size: 30px; }
-           .projectsPage .projectsPopOut .projectsContainer .projectDiv .projectDescription p {
+           p {
             font-size: 25px;
             color: black; }
          .projectsPage .projectsPopOut .projectsContainer .projectOne, .projectsPage .projectsPopOut .projectsContainer .projectTwo,  .projectsPage .projectsPopOut .projectsContainer .projectThree,  .projectsPage .projectsPopOut .projectsContainer .projectFour {
-          opacity: .9;
+          opacity: 1;
           margin: 25px 15px 25px 15px;
           background-color: white; }
            .projectsPage .projectsPopOut .projectsContainer .projectOne .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectTwo .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectThree .projectDiv,  .projectsPage .projectsPopOut .projectsContainer .projectFour .projectDiv {
@@ -228,9 +249,9 @@
             font-family: 'Josefin Slab', serif;
             font-size: 20px;
             font-size: 18px;
-            min-width: 200px;
-            max-width: 400px;
-            height: 300px; }
+            /*min-width: 200px;
+            max-width: 400px;*/
+            }
    .footer {
     background-color: white;
     margin-top: 100px;
