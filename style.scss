@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $basicFont: 'Oxygen', 'Source Sans Pro', sans-serif;
 
 $darkGray: #484A4A;
@@ -332,3 +333,67 @@ body {
 		}
 
 }
+=======
+/*
+Error: Invalid CSS after "0": expected expression (e.g. 1px, bold), was "; }"
+        on line 3 of style.css
+
+1: @keyframes fadein {
+2:   from {
+3:     opacity: 0; }
+4:   to {
+5:     opacity: 1; } }
+6: .welcomeText {
+7:   animation: fadein 2s; }
+8: 
+
+Backtrace:
+style.css:3
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:738:in `assert_done'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:76:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:240:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script.rb:27:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:1151:in `parse_script'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:721:in `parse_property'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:692:in `parse_property_or_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:658:in `parse_line'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \"; }\"\A         on line 3 of style.css\A \A 1: @keyframes fadein {\A 2:   from {\A 3:     opacity: 0; }\A 4:   to {\A 5:     opacity: 1; } }\A 6: .welcomeText {\A 7:   animation: fadein 2s; }\A 8: "; }
+>>>>>>> 78de25c3940977a9b5b304d3c487e7eaa7e3ed57
